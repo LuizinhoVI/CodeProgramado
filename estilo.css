@@ -1,33 +1,27 @@
-
-.meio{
-border: solid 1px ;
-width: 60%;
-height: 40%;
-margin-left: 20%;
-background: #F5FFFA;
-position: absolute;
-order: 2;
+.meio {
+    border: solid 1px;
+    width: 870px;
+    height: 1200px;
+    margin-left: 200px;
+    margin-top: -457px;
+    background: #F5FFFA;
+    position: static;
+    order: 2;
 }
 
-
-
-.canto_esquerdo{
-border: solid 1px ;
-width: 10%;
-position: absolute; 
-order: 1;
+.canto_esquerdo {
+    border: solid 1px;
+    width: 200px;
+    position: static;
+    order: 1;
+    height: auto;
 }
 
-
-
-
-
-.footer{
-	position: fixed;
-	margin: 0 auto;
-	width: 100%;
-	height: 29px;
-	bottom: 0;
-	background-color: #4F4F4F; 
-
+.footer {
+    margin-top: 200px;
+    position: static;
+    width: 100%;
+    height: 29px;
+    bottom: 0;
+    background-color: #4F4F4F;
 }
