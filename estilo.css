@@ -9,13 +9,18 @@
     border: solid 1px;
     width: 870px;
     height: 1200px;
-    margin-left: 200px;
+    margin-left:250px;
     margin-top: -458px;
     background: #F5FFFA;
     position: static;
     order: 2;
 }
-
+.direito{
+margin-top: -1200px;
+margin-left: 1150px;
+border: solid 1px black;
+position: absolute;
+}
 
 
 .footer {
