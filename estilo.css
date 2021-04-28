@@ -1,14 +1,3 @@
-.meio {
-    border: solid 1px;
-    width: 870px;
-    height: 1200px;
-    margin-left: 200px;
-    margin-top: -457px;
-    background: #F5FFFA;
-    position: static;
-    order: 2;
-}
-
 .canto_esquerdo {
     border: solid 1px;
     width: 200px;
@@ -16,6 +5,18 @@
     order: 1;
     height: auto;
 }
+.meio {
+    border: solid 1px;
+    width: 870px;
+    height: 1200px;
+    margin-left: 200px;
+    margin-top: -458px;
+    background: #F5FFFA;
+    position: static;
+    order: 2;
+}
+
+
 
 .footer {
     margin-top: 200px;
