@@ -1,3 +1,14 @@
+.menu_inicial{
+
+border: solid 1px white;
+font-size: 20px;
+position:fixed;
+color: white;
+}
+.espaco{
+margin-left:0px;
+font-family:fantasy;
+}
 .canto_esquerdo {
     border: solid 1px;
     width: 200px;
@@ -10,18 +21,11 @@
     width: 870px;
     height: 1200px;
     margin-left:250px;
-    margin-top: -458px;
+    margin-top: 100px;
     background: #F5FFFA;
     position: static;
     order: 2;
 }
-.direito{
-margin-top: -1200px;
-margin-left: 1150px;
-border: solid 1px black;
-position: absolute;
-}
-
 
 .footer {
     margin-top: 200px;
@@ -31,3 +35,4 @@ position: absolute;
     bottom: 0;
     background-color: #4F4F4F;
 }
+
