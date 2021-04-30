@@ -1,3 +1,10 @@
+.inicio{
+
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 2px 10px #000000;
+
+}
+
 .menu_inicial{
 
 border: solid 1px white;
@@ -10,18 +17,13 @@ margin-left:0px;
 font-family:fantasy;
 }
 
-.meio {
-    height: 1000px;
-    margin-top: -20px;
-    position: static;
-    order: 2;
-}
+
 
 .footer {
-    margin-top: 200px;
+    margin-top: 10px;
     position: static;
     
-    bottom: 1;
+    bottom: 0;
     background-color: #4F4F4F;
 
    
@@ -37,4 +39,8 @@ width: 3px;;
 height: 33px;
 color:red;
 background: #696969;
+}
+
+.pesquisar_bt{
+width: 100px;
 }
