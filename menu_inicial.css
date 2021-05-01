@@ -1,0 +1,58 @@
+.bt:hover{
+background-color:black;
+color: white;
+}
+
+.menu_inicial{
+border: solid 1px ;
+font-size: 20px;
+position:static;
+color: black;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+height: 38px;
+}
+ 
+.bt{
+
+	font-size: 20px;
+	cursor:pointer;
+
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a{
+  display: none; 
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  position: static; 
+}
+
+.active{
+  display: block; 
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none; 
+}
+
+
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
