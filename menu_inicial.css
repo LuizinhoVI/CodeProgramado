@@ -1,14 +1,13 @@
 
 
 .menu_inicial{
-border: ;
 font-size: 20px;
 position:fixed;
 color: black;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-height: 40px;
+height: 50px;
 width: 100%;
-background:  #4CAF50;
+background:  #ec1919;
 margin-top: -90px;
 font-family: sans-serif;
 }
@@ -18,15 +17,16 @@ font-family: sans-serif;
 
 .projeto,.escola,.programas,.jogos,.tutoriais {
   list-style-type: none;
-  margin: 0;
+  margin-left: 0;
+  margin: ;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 .pj1,.pj2 ,.pj3,.pj4,.pj5 {
   display: none; 
-  color: #000;
+  color: rgb(12, 12, 12);
   padding: 1px 6px;
   text-decoration: none;
   position: relative;
@@ -57,35 +57,36 @@ li a:hover:not(.active) {
 .logo{
 float: left;
 margin-left: 30px;
-margin-top: 5PX;
-background: #4CAF50;
-width:110px; 
+border: solid 1px red;
+width:50px; 
+
 
 }
-.projeto{
 
+
+.projeto{
 float: left;
 margin-left: 30px;
-position: ;
+
 }
 .escola{
 float: left;
-margin-left: 0px;
+margin-left: 30px;
 
 }
 
 .programas{
 float: left;
-margin-left: 0px;
+margin-left: 30px;
 
 }
 .jogos{
 float: left;
-margin-left:0px;
+margin-left:30px;
 
 }
 .tutoriais{
 float: left;
-margin-left: 0px;
+margin-left: 30px;
 
 }

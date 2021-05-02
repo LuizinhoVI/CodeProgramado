@@ -1,5 +1,5 @@
  var contador=[0,0,0,0,0];
- 
+  
 function projetos(){
 
 	contador[0]++; 
