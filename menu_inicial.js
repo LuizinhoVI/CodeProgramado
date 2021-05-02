@@ -1,43 +1,150 @@
- var i=0;
-   
-function novo(){
+ var contador=[0,0,0,0,0];
+ 
+function projetos(){
 
-	i++; 
+	contador[0]++; 
 
-	var x = document.getElementsByTagName("li"); 
-	var y = document.getElementsByTagName("a");
+	var x = document.getElementsByClassName("pj1"); 
 
 	x[0].style.display="block"; 
 	x[1].style.display="block";
 	x[2].style.display="block";
 	x[3].style.display="block";
 
-	y[0].style.display="block";
-	y[1].style.display="block";
-	y[2].style.display="block";
-	y[3].style.display="block";
 
-	console.log(i);
 
-	if (i==2) {
+   console.log(contador[0]);
+
+	if (contador[0]==2) {
 
 	x[0].style.display="block"; 
 	x[1].style.display="none";
 	x[2].style.display="none";
 	x[3].style.display="none";
 
-	y[0].style.display="block";
-	y[1].style.display="none";
-	y[2].style.display="none";
-	y[3].style.display="none";
 	}
-	if(i>=2){
-	i=0;
+	if(contador[0]>=2){
+	contador[0]=0;
 	}
 
 
 
 
  return 0;
-}
+};
+
+function escola(){
+
+	contador[1]++; 
+
+	var x = document.getElementsByClassName("pj2"); 
+
+	x[0].style.display="block"; 
+	x[1].style.display="block";
+	x[2].style.display="block";
+	x[3].style.display="block";
+
+	if (contador[1]==2) {
+
+	x[0].style.display="block"; 
+	x[1].style.display="none";
+	x[2].style.display="none";
+	x[3].style.display="none";
+
+	}
+	if(contador[1]>=2){
+	contador[1]=0;
+	}
+
+
+
+
+ return 0;
+};
+
+function programas(){
+	contador[2]++; 
+
+	var x = document.getElementsByClassName("pj3"); 
+
+	x[0].style.display="block"; 
+	x[1].style.display="block";
+	x[2].style.display="block";
+	x[3].style.display="block";
+
+	if (contador[2]==2) {
+
+	x[0].style.display="block"; 
+	x[1].style.display="none";
+	x[2].style.display="none";
+	x[3].style.display="none";
+
+	}
+	if(contador[2]>=2){
+	contador[2]=0;
+	}
+
+
+
+
+ return 0;
+};
+
+function jogos(){
+
+	contador[3]++; 
+
+	var x = document.getElementsByClassName("pj4"); 
+
+	x[0].style.display="block"; 
+	x[1].style.display="block";
+	x[2].style.display="block";
+	x[3].style.display="block";
+
+	if (contador[3]==2) {
+
+	x[0].style.display="block"; 
+	x[1].style.display="none";
+	x[2].style.display="none";
+	x[3].style.display="none";
+
+	}
+	if(contador[3]>=2){
+	contador[3]=0;
+	}
+
+
+
+
+ return 0;
+};
+
+function tutoriais(){
+
+	contador[4]++; 
+
+	var x = document.getElementsByClassName("pj5"); 
+
+	x[0].style.display="block"; 
+	x[1].style.display="block";
+	x[2].style.display="block";
+	x[3].style.display="block";
+
+	if (contador[4]==2) {
+
+	x[0].style.display="block"; 
+	x[1].style.display="none";
+	x[2].style.display="none";
+	x[3].style.display="none";
+
+	}
+	if(contador[4]>=2){
+	contador[4]=0;
+	}
+
+
+
+
+ return 0;
+};
 
