@@ -7,19 +7,22 @@
   .container {
     padding: 10px;
   }
+  
   .meio {
     height: 1000px;
-    margin-top: ;
-    position: relative;
+    margin-top: 30px;
+    position: static;
     order: 2;
-     ;
 }
 
-.pesquisar_bt{
-width: 100px;
-}
+
 
 /*ferramenta de pesquisa */
 .procura{
-margin-top: 30px;
+margin-top: 90px;
+position: static;
+
+}
+.pesquisar_bt{
+width: 100px;
 }
