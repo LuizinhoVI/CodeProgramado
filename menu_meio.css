@@ -10,7 +10,7 @@
   
   .meio {
     height: 1000px;
-    margin-top: 30px;
+    margin-top: 20px;
     position: static;
     order: 2;
 }
@@ -19,10 +19,18 @@
 
 /*ferramenta de pesquisa */
 .procura{
-margin-top: 90px;
+margin-top: 30px;
 position: static;
 
 }
 .pesquisar_bt{
 width: 100px;
 }
+
+.resultado_pesquisa{
+
+margin-top: 10px;
+
+
+}
+

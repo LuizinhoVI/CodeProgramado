@@ -21,11 +21,11 @@ color:red;
 
 
 
-.footer {
+footer{
     margin-top: 10px;
     position: static;
     bottom: 0;
     background-color: #4F4F4F;
-
+    max-width: 100%;
    
 }
