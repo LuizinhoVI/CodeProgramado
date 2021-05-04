@@ -9,10 +9,13 @@
   }
   
   .meio {
-    height: 1000px;
-    margin-top: 20px;
-    position: static;
-    order: 2;
+    height: auto;
+    width: auto;
+    margin-right: auto;
+    margin-left:auto ;
+    margin-top: 30px;
+    position: relative;
+   
 }
 
 
