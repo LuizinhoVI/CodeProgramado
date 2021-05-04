@@ -1,14 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 .menu_inicial{
   
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-width: 100%;
-height: 3.0em;
 background-color: #4CAF50;
-border: solid 1px red;
-position: relative;
+position:  static;
+height: 3.0em;
 
 }
  
