@@ -9,16 +9,22 @@
     }
 
 
+
+
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 890px) {
     .menu_inicial{
         width: 85em;
         
     }
     .footer{
-        width: 85em;
+        width: 85em; 
     }
+    .meio{
+    left: 50%;
 
+
+    }
 
 }
 
