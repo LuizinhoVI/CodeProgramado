@@ -12,11 +12,11 @@
 }
 @media only screen and (max-width: 900px) {
     .menu_inicial{
-        width: 90em;
+        width: 85em;
      border: solid 2px red ;
     }
     .footer{
-        width: 90em;
+        width: 85em;
     }
 
 
