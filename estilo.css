@@ -1,9 +1,11 @@
 
 
-@media only screen and (max-width: 100%) {
+@media only screen and (max-width: 1200px) {
     .menu_inicial{
-        width: 100%;
+       
+       
     }
+
     .footer{
         width: 100%;
     }
@@ -12,7 +14,8 @@
 
 
 }
-@media only screen and (max-width: 890px) {
+
+@media only screen and (max-width: 930px) {
     .menu_inicial{
         width: 85em;
         
@@ -22,11 +25,20 @@
     }
     .meio{
     left: 50%;
+    float: left;
+    }
+    .pagination{
 
-
+        left: 450px;
+        border: solid red 1px;
+        position: relative;
     }
 
 }
+
+
+
+
 
 footer{
     margin-top: 20px;
