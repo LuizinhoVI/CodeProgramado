@@ -13,7 +13,6 @@
     height: auto;
     width: auto;
     margin-right: auto;
-    
     margin-top: 30px;
     position: relative;
    
@@ -24,7 +23,7 @@
 /*ferramenta de pesquisa */
 .procura{
 margin-top: 30px;
-position: static;
+position: relative;
 
 }
 .pesquisar_bt{
