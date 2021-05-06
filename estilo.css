@@ -12,7 +12,7 @@
 
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1140px) {
     .menu_inicial{
         width: 85em;
         
@@ -22,15 +22,16 @@
     }
 
     .meio{
+        margin-left: 15em;
+   
 
-    left: 60em;
     }
 
     .procura{
     left: 20em;
-    left: 50%;
     float: left;
-    
+    border: solid red 2px;
+
 
     }
     .pagination{
@@ -40,9 +41,11 @@
         position: relative;
         
     }
-    .procura{
-        border: solid red 2px;
-        left: 20em;
+    .resultado_pesquisa{
+        top: 20px;
+        float: center;
+        margin-left: 70em;
+        position: relative;
     }
 
 }
