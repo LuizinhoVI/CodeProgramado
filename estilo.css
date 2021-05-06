@@ -31,7 +31,7 @@
     left: 20em;
     float: left;
     border: solid red 2px;
-
+        
 
     }
     .pagination{
@@ -42,10 +42,11 @@
         
     }
     .resultado_pesquisa{
-        top: 20px;
+        margin-top: 20px;
         float: center;
         margin-left: 70em;
         position: relative;
+        border: solid red 2px;
     }
 
 }
