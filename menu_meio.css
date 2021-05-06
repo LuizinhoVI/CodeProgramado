@@ -23,11 +23,11 @@
 
 /*ferramenta de pesquisa */
 .procura{
-border: solid 2px red;
+border: solid 1px rgb(0, 0, 0);
 width: 800px;
 margin-top: 40px;
 margin-left: 17em;
-position: static;
+position: static ;
 
 }
 .pesquisar_bt{
@@ -37,7 +37,7 @@ width: 100px;
 
 .resultado_pesquisa{
 
-position: static;
+position: relative;
 top: 40px;
 left: -500px;
 }
