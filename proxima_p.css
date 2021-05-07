@@ -1,6 +1,7 @@
-.pagination {
+.pagination{
   display: inline-block;
-  margin-left:  41%;
+  /* margin-left:  50px; */
+  /* left: 500px; */
   margin-top: 70px;
   
 }

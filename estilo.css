@@ -1,9 +1,8 @@
 
 
-@media only screen and (max-width: 100%) {
-    .menu_inicial{
-        width: 100%;
-    }
+@media only screen and (max-width: 1200px) {
+   
+
     .footer{
         width: 100%;
     }
@@ -12,7 +11,8 @@
 
 
 }
-@media only screen and (max-width: 890px) {
+
+@media only screen and (max-width: 930px) {
     .menu_inicial{
         width: 85em;
         
@@ -20,16 +20,37 @@
     .footer{
         width: 85em; 
     }
+
     .meio{
+
     left: 15em;
     }
     .procura{
         left: 20em;
         
 
+    left: 50%;
+    float: left;
+    
+
+    }
+    .pagination{
+
+        left: 450px;
+        
+        position: relative;
+        
+    }
+    .procura{
+        border: solid red 2px;
+        left: 19em;
     }
 
 }
+
+
+
+
 
 footer{
     margin-top: 20px;

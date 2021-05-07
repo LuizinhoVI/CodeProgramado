@@ -13,7 +13,12 @@
     height: auto;
     width: auto;
     margin-right: auto;
+
     margin-top: 30px;
+
+    
+    margin-top: 50px;
+
     position: relative;
    
 }
@@ -22,7 +27,12 @@
 
 /*ferramenta de pesquisa */
 .procura{
+
 margin-top: 30px;
+
+margin-top: 40px;
+margin-left: 25%;
+
 position: relative;
 
 }
@@ -32,8 +42,8 @@ width: 100px;
 
 .resultado_pesquisa{
 
-margin-top: 10px;
-
-
+position: relative;
+top: 40px;
+left: -500px;
 }
 

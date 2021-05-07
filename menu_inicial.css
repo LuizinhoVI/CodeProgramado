@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pangolin&family=Playfair+Display&display=swap');
 
 .menu_inicial{
-  
+
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color: #4CAF50;
-position:  static;
+position:  relative;
 height: 3.0em;
 
 }
