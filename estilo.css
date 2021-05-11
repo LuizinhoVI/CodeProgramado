@@ -1,41 +1,25 @@
 
 
-@media only screen and (max-width: 50%) {
+@media only screen and (max-width: 375px) {
     .menu_inicial{
-        width: 85em;
+       width: ;
         
     }
-    .footer{
-        width: 85em; 
-    }
 
-    .meio{
-        margin-left: 15em;
-   
 
-    }
+  
+.procura{
 
-    .procura{
-    left: 20em;
-    float: left;
-    border: solid red 2px;
-        
+margin-right: 100px;
+ border: solid red 2px;
+ border-left:3000px; 
+}
 
-    }
-    .pagination{
+.meio{
 
-        left: 450px;
-        
-        position: relative;
-        
-    }
-    .resultado_pesquisa{
-        margin-top: 20px;
-        float: center;
-        margin-left: 70em;
-        position: relative;
-        border: solid red 2px;
-    }
+border: solid red 10px;
+
+}
 
 }
 
@@ -43,15 +27,5 @@
 
 
 
-footer{
-    margin-top: 20px;
-    position: absolute;
-    background-color: #4F4F4F;
-    width: 100%;
    
-}
 
-body{
-
-
-}
