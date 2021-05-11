@@ -32,13 +32,19 @@ position: static ;
 }
 .pesquisar_bt{
 width: 100px;
-
 }
-
 .resultado_pesquisa{
-
 position: relative;
 top: 40px;
 left: -500px;
 }
 
+.pesquisa{
+ width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px ;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
