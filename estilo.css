@@ -1,15 +1,6 @@
 
 
-/*@media only screen and (max-width: 1200px) {
-   
-
-    .footer{
-        width: 100%;
-    }
-
-}*/
-
-/*@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 50%) {
     .menu_inicial{
         width: 85em;
         
@@ -48,7 +39,7 @@
 
 }
 
- */
+ 
 
 
 
@@ -61,6 +52,6 @@ footer{
 }
 
 body{
-    
+
 
 }
