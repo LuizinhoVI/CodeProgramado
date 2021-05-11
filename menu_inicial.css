@@ -48,3 +48,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.menu_inicial{
+width: 100%;
+}
