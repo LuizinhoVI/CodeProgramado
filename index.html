@@ -31,20 +31,6 @@
              document.getElementById("novo2").style.display="block";
                }
 
-
-               var form = document.getElementById('formulario');
-               var campo = document.getElementById('campo');
-
-               form.addEventListener('submit', function(e) {
-                // alerta o valor do campo
-                
-            
-            
-                // impede o envio do form
-                e.preventDefault();
-            });
-
-
         </script>
         <style>
 
@@ -64,65 +50,7 @@
     </head>
 <body>
 
-    <div align="center">
-           
-            <button onclick="aparecer()"> primeira tabela </button>
-            <button onclick="aparecer1()"> segunda tabela </button>
-            <button onclick="aparecer2()"> terceira tabela </button>
-    </div>   
+ 
 
-
-
-<div id="novo" class="arte">
-    <table align="center" border="1" >
-        <td align="left">Nome:   
-        <input type="text">
-        </td>
-        <tr></tr>
-        <td align="left">idade:
-            <input type="text" size="20px">
-        </td>
-        <tr></tr>
-        <td align="center" ><input type="submit" value="enviar arquivo"></td>
-       </table>
-
-       
-    </div>
-
-    <div id="novo1" class="arte1">
-        <table align="center" border="1" >
-            <td align="left">Cpf:   
-            <input type="text">
-            </td>
-            <tr></tr>
-            <td align="left">email:
-                <input type="text" size="20px">
-            </td>
-            <tr></tr>
-            <td align="center" ><input type="submit" value="enviar arquivo"></td>
-           </table>
-    
-           
-        </div>
-        <div id="novo2" class="arte2">
-            <table align="center" border="1" >
-                <td align="left">rua:   
-                <input type="text">
-                </td>
-                <tr></tr>
-                <td align="left">cep:
-                    <input type="text" size="20px">
-                </td>
-                <tr></tr>
-                <td align="center" ><input type="submit" value="enviar arquivo"></td>
-               </table>
-        
-               
-            </div>
-
-            <form id="formulario">
-                <input type="text" id="campo">
-                <input type="submit" value="Enviar">
-            </form>
     </body>
 </html>
