@@ -36,4 +36,20 @@ margin-top: -2px;
 .tutoriais{
     margin-left: 30px;
 
+
+}
+.youtube,.github ,.instagram{
+    border: solid black   1px ;
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-shadow: 0px 0px 10px  black
+
+}
+.quadrado{
+border: solid black 1px;
+width: 200px;
+height: 200px;
+margin-top: 50px;
 }
