@@ -1,31 +1,39 @@
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
 
 
-@media only screen and (max-width: 425px) {
+.head1{
+    border: solid 2px red;
+    height: 50px;
+    position: relative;
+    font-size: 40px;
+
+}
+
+.headf{
+
+    display : inline-block;
+}
+.logo{
+float: left;
+margin-left: 10px;
+margin-top: -2px;
+}
+
+.portfolio{
+    margin-left: 30px;
+
+}
+
+.sites{
+    margin-left: 30px;
     
-ul li{
-    float: none;
 }
 
-  
-.procura{
-
-margin-right: 100px;
- border: solid red 2px;
- border-left:3000px; 
-}
-
-.meio{
-
-border: solid red 10px;
+.tutoriais{
+    margin-left: 30px;
 
 }
-
-}
-
- 
-
-
-
-  
-
-
