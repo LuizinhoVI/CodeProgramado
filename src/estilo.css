@@ -5,7 +5,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(243, 243, 243);
   }
   
   li {
@@ -14,14 +14,14 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: rgb(12, 12, 12);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(6, 219, 52);
   }
   
   .active {
@@ -43,18 +43,9 @@ ul {
 }
 
 
-.head1{
-    border: solid 2px red;
-    height: 50px;
-    position: relative;
-    font-size: 40px;
 
-}
 
-.headf{
 
-    display : inline-block;
-}
 .logo{
 float: left;
 margin-left: 10px;
@@ -78,10 +69,7 @@ margin-top: -2px;
     
 }
 
-.tela_social{
 
-    border: solid 10px rgb(31, 230, 13);
-}
 
 .youtube,.github ,.instagram{
     border: solid black   1px ;
@@ -139,11 +127,15 @@ margin-top: 50px;
     margin-top: -202px;
     position: static;
 }
-
-
 .tela_youtube{
+display: block;
 
-    border: solid 10px black;
-   
 }
+
+.tela_portfolio{
+/* border: solid 1px red; */
+
+
+}
+
 
