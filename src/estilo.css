@@ -1,3 +1,41 @@
+/* menu inicial para selecionar  */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
@@ -47,25 +85,25 @@ margin-top: -2px;
 
 .youtube,.github ,.instagram{
     border: solid black   1px ;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-shadow: 0px 0px 10px  black
-
+    
 }
 
 .youtube{
-    margin-left: 200px;
+    margin-left: 350px;
+    position: absolute;    
 }
 
 .instagram{
-    margin-left: -100px;
+    margin-left: -500px;
+    position:absolute;
 }
 
-.github{
 
-}
 
 
 
@@ -78,20 +116,28 @@ margin-top: 50px;
 
 }
 .q1{
-    margin: 10px -300px  0px;
-    margin-right: 700px;
+    /* margin: 10px -300px  0px; */
+    margin-right: 1000px;
+    position:static;
 }
+
 .q2{
-margin:-203px 300px  0px;
-margin-right: 700px;
+    /* margin:-202px 300px  0px; */
+    margin-top: -202px;
+    margin-left: -480px;
+    position: static;
 }
 .q3 {
-    margin:-203px 550px  0px;
-    margin-left: 700px;
+    /* margin:-202px 550px  0px; */
+    margin-top: -202px;
+    margin-left: 460px;
+    position: static;
 }
 .q4 {
-    margin:-203px 550px  0px;
+    /* margin:-202px 550px  0px; */
     margin-left: 1000px;
+    margin-top: -202px;
+    position: static;
 }
 
 
@@ -100,3 +146,4 @@ margin-right: 700px;
     border: solid 10px black;
    
 }
+
