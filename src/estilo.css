@@ -1,5 +1,12 @@
 /* menu inicial para selecionar  */
+/* letra geral ------------------------------------------------------------ */
+.letra{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* final letra------------------------------------------------------------- */
 
+
+/* menu inicial --------------------------------------------------------------- */
 .menu_inicial {
     list-style-type: none;
     margin: 0;
@@ -7,24 +14,24 @@
     overflow: hidden;
     background-color: rgb(243, 243, 243);
     border-bottom: #ccc solid 2px;
-  width: 100%;
+    width: 100%;
+  
   }
   
   .p1,.s1,.t1 ,.l1 {
-    float: left;
-  }
   
-  .p1,.s1,.t1,.l1{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-100%);
+ float: left;
     display: block;
-    color: rgb(12, 12, 12);
-    text-align: center;
-    padding: 10px 10px;
+    color: rgb(12, 12, 12,10);
     text-decoration: none;
-
+    padding: 5px;
+    
   }
+
+
   
   li a:hover:not(.active) {
     background-color: rgb(6, 219, 52);
@@ -32,13 +39,7 @@
   
 
 
-
-
-
-
-
-
-
+/* logo da img --------------------------------------------------------- */
 .logo{
 float: left;
 margin-left: 10px;
@@ -49,10 +50,9 @@ margin-top: -2px;
 
 /* parte da rede social ----------------------------------------------------------------------- */
 .tela_social{
-
-  top: 20px;
+  
   height: 170px;
-  position: static; 
+  position: relative; 
 }
 
 .youtube,.github ,.instagram{
@@ -72,7 +72,8 @@ margin-top: -2px;
 }
 .g1{
   pointer-events: none;
-  top: 190px;
+  top: 130px;
+  color: black;
 }
 
 .youtube,.y1{
@@ -82,7 +83,9 @@ margin-top: -2px;
   }
   .y1{
     pointer-events: none;
-    top: 190px;
+    top: 130px;
+    color: black;
+   
   }
   
   .instagram,.i1{
@@ -93,46 +96,54 @@ margin-top: -2px;
 }
 .i1{
   pointer-events: none;
-  top: 190px;
+  top: 130px;
+  color: black;
+
 }
 
-/* parte dos videos ------------------------------------------------------------------ */
+
+/* parte do youtube ------------------------------------------------------------------ */
 
 .tela_youtube{
   display: block;
-
-  height: 300px;
+  width: 100%;
+  height: 310px;
   top: 10px;
   position: static;
+  border: 1px solid #000;
   }
+  iframe{
+    width: 300px;
+    height: 250px;
+  }
+
 
 .quadrado{
 border: solid black 1px;
-width: 200px;
-height: 200px;
+width: 300px;
+height: 250px;
 margin-top: 30px;
-
+position: absolute;
 }
 .q1{
-    left: 180px;
-    position:absolute;
+    left: 10px;
 }
 
 .q2{
-    left: 400px;
+    left: 360px;
     
-    position: absolute;
+    
 }
 .q3 {
-    right: 180px;
-    position: absolute;
+    right: 360px;
+  
 } 
 .q4 {
-    right: 400px;
-    position: absolute;
+    right: 10px;
+   
 } 
  
-
+/* parte do hodapé ----------------------------------------------------------------------------*/
 .footer{
 text-align: center;
 border: solid 1px  white;
@@ -141,16 +152,21 @@ background-color:#f8f9fa;
 position: absolute;
 height: 20px;
 width: 100%;
-
 padding-bottom: 10px;
 padding-top: 10px;
-
 bottom:0;
 }
+
 .inst{
-  color: red;
+  color: rgb(36, 14, 226);
   margin-top: -20px;
-    
+  
+}
+.inst1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 body{
   margin: 0;
