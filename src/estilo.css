@@ -23,9 +23,11 @@ margin-left: 10px;
 margin-top: -2px;
 }
 
+
+
 .portfolio{
     margin-left: 30px;
-
+    
 }
 
 .sites{
@@ -35,9 +37,14 @@ margin-top: -2px;
 
 .tutoriais{
     margin-left: 30px;
-
-
+    
 }
+
+.tela_social{
+
+    border: solid 10px rgb(31, 230, 13);
+}
+
 .youtube,.github ,.instagram{
     border: solid black   1px ;
     margin-top: 100px;
@@ -47,10 +54,49 @@ margin-top: -2px;
     text-shadow: 0px 0px 10px  black
 
 }
+
+.youtube{
+    margin-left: 200px;
+}
+
+.instagram{
+    margin-left: -100px;
+}
+
+.github{
+
+}
+
+
+
+
 .quadrado{
 border: solid black 1px;
 width: 200px;
 height: 200px;
 margin-top: 50px;
-float: left;
+
+}
+.q1{
+    margin: 10px -300px  0px;
+    margin-right: 700px;
+}
+.q2{
+margin:-203px 300px  0px;
+margin-right: 700px;
+}
+.q3 {
+    margin:-203px 550px  0px;
+    margin-left: 700px;
+}
+.q4 {
+    margin:-203px 550px  0px;
+    margin-left: 1000px;
+}
+
+
+.tela_youtube{
+
+    border: solid 10px black;
+   
 }
