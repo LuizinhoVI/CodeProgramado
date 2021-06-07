@@ -35,17 +35,6 @@ ul {
 
 
 
-
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-}
-
-
-
-
-
 .logo{
 float: left;
 margin-left: 10px;
@@ -68,74 +57,99 @@ margin-top: -2px;
     margin-left: 30px;
     
 }
-
-
+/* parte da rede social ----------------------------------------------------------------------- */
+.tela_social{
+  border: solid 1px black;
+  top: 20px;
+  height: 170px;
+  position: static; 
+}
 
 .youtube,.github ,.instagram{
     border: solid black   1px ;
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    text-shadow: 0px 0px 10px  black
+    text-shadow: 0px 0px 10px  black;
     
 }
 
-.youtube{
-    margin-left: 350px;
-    position: absolute;    
+.github,.g1{
+  left:50%;
+  position: absolute;
+  transform:translateX(-50%);
+}
+.g1{
+  pointer-events: none;
+  top: 190px;
 }
 
-.instagram{
-    margin-left: -500px;
+.youtube,.y1{
+  transform:translateX(-50%);
+    left: 100px;
+    position: absolute;    
+  }
+  .y1{
+    pointer-events: none;
+    top: 190px;
+  }
+  
+  .instagram,.i1{
+    transform:translateX(50%);
+  /* margin-top: -300px; */
+    right: 100px;
     position:absolute;
 }
+.i1{
+  pointer-events: none;
+  top: 190px;
+}
 
+/* parte dos videos ------------------------------------------------------------------ */
 
-
-
-
+.tela_youtube{
+  display: block;
+  border: solid 2px blue;
+  height: 300px;
+  top: 10px;
+  position: static;
+  }
 
 .quadrado{
 border: solid black 1px;
 width: 200px;
 height: 200px;
-margin-top: 50px;
+margin-top: 30px;
 
 }
 .q1{
-    /* margin: 10px -300px  0px; */
-    margin-right: 1000px;
-    position:static;
+    left: 180px;
+    position:absolute;
 }
 
 .q2{
-    /* margin:-202px 300px  0px; */
-    margin-top: -202px;
-    margin-left: -480px;
-    position: static;
+    left: 400px;
+    
+    position: absolute;
 }
 .q3 {
-    /* margin:-202px 550px  0px; */
-    margin-top: -202px;
-    margin-left: 460px;
-    position: static;
+    right: 180px;
+    position: absolute;
 }
 .q4 {
-    /* margin:-202px 550px  0px; */
-    margin-left: 1000px;
-    margin-top: -202px;
-    position: static;
+    right: 400px;
+    position: absolute;
 } 
-.tela_youtube{
-display: block;
+ 
 
+.footer{
+text-align: center;
+border: solid 1px  white;
+color:white;
+background-color: rgb(3, 3, 3);
+position: absolute;
+height: 20px;
+width: 100%;
+bottom: 0;
 }
-
-.tela_portfolio{
-
-
-
-}
-
-
