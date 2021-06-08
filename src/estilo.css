@@ -10,11 +10,12 @@
 .menu_inicial {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 6px;
     overflow: hidden;
     background-color: rgb(243, 243, 243);
     border-bottom: #ccc solid 2px;
     width: 100%;
+
   }
   
   .p1,.s1,.t1 ,.l1 {
@@ -30,12 +31,55 @@
     padding: 5px;
   
   }
-
+  
+ 
 
   
-  li a:hover:not(.active) {
-    background-color: rgb(6, 219, 52);
-  }
+ .bt_1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border: solid  blue 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ border-radius: 90%;
+  transition-duration: 0.2s;
+  cursor: pointer;
+ background-color: white; 
+  color: black; 
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 50px;
+  position: absolute;
+}
+.b1{
+  left: 10%;
+}
+.b2{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.b3{
+  right: 10%;
+}
+.sub_menu{
+  
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 500px;
+}
+
+
+.bt_1:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
   
 
 
