@@ -1,4 +1,10 @@
-/* menu inicial para selecionar  */
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #e9ecef;
+}
+
 /* letra geral ------------------------------------------------------------ */
 .letra{
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -15,7 +21,7 @@
     background-color: rgb(243, 243, 243);
     border-bottom: #ccc solid 2px;
     width: 100%;
-
+  height: 50px;
   }
   
   .p1,.s1,.t1 ,.l1 {
@@ -70,6 +76,7 @@ position: absolute;
 left: 50%;
 transform: translateX(-50%);
 width: 500px;
+
 }
 
 
@@ -91,6 +98,8 @@ margin-top: -2px;
 }
 
 
+
+
 /* parte da rede social ----------------------------------------------------------------------- */
 .tela_social{
 
@@ -99,8 +108,8 @@ margin-top: -2px;
 }
 
 .youtube,.github ,.instagram{
-    border: solid black   1px ;
-    margin-top: 20px;
+
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -115,7 +124,7 @@ margin-top: -2px;
 }
 .g1{
   pointer-events: none;
-  top: 130px;
+  top: 110px;
   color: black;
 }
 
@@ -126,11 +135,10 @@ margin-top: -2px;
   }
   .y1{
     pointer-events: none;
-    top: 130px;
+    top: 110px;
     color: black;
    
   }
-  
   .instagram,.i1{
     transform:translateX(50%);
   /* margin-top: -300px; */
@@ -139,25 +147,48 @@ margin-top: -2px;
 }
 .i1{
   pointer-events: none;
-  top: 130px;
+  top: 110px;
   color: black;
 
 }
 
+/* texto do meio code programado */
+.tema{
+  top: -20px;
+  position: relative;
+    font-size: 50px;
+  
+  }
+  /* timeline da pagina  */
+  .timeline{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(255, 255, 255);
+    border: solid 3px #ccc;
+    height: 1800px;
+  }
+  .sub_quadrado1{
+    width: 100%;
+    height: 500px;
+    border: solid 1px red;
+
+  }
 
 /* parte do youtube ------------------------------------------------------------------ */
 
 .tela_youtube{
-  display: block;
+  /* border: solid red 1px; */
   width: 100%;
   height: 310px;
-  top: 10px;
-  position: static;
-  border: 1px solid #000;
+  position: relative;
+
   }
+
   iframe{
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 350px;
   }
 
 
@@ -166,24 +197,26 @@ border: solid black 1px;
 width: 300px;
 height: 250px;
 margin-top: 30px;
-position: absolute;
+position: relative;
+left: -7%;
+
 }
 .q1{
-    left: 10px;
+  top: 30px;
 }
 
 .q2{
-    left: 360px;
-    
+  
+  top: 30px;
     
 }
 .q3 {
-    right: 360px;
-  
+    
+  top: 30px;
 } 
 .q4 {
-    right: 10px;
-   
+ 
+  top: 30px;
 } 
  
 /* parte do hodapé ----------------------------------------------------------------------------*/
@@ -192,7 +225,7 @@ text-align: center;
 border: solid 1px  white;
 border-top:#ccc solid 2px;
 background-color:#f8f9fa;
-position: absolute;
+position: static;
 height: 20px;
 width: 100%;
 padding-bottom: 10px;
@@ -210,9 +243,4 @@ bottom:0;
   left: 50%;
   transform: translateX(-50%);
 
-}
-body{
-  margin: 0;
-  overflow-x: hidden;
-  background-color: #e9ecef;
 }
