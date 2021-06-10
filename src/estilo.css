@@ -7,9 +7,8 @@ body{
 }
 
 /* letra geral ------------------------------------------------------------ */
-.letra{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
+  
 /* final letra------------------------------------------------------------- */
 
 
@@ -60,6 +59,7 @@ body{
   position: absolute;
   box-shadow: #888888 1px 4px;
 }
+
 .b1{
   left: 10%;
 }
@@ -139,8 +139,7 @@ margin-top: -2px;
   }
   .instagram,.i1{
     transform:translateX(50%);
- 
-  right: 120px;
+  right: 100px;
   position: absolute;
 }
 .i1{

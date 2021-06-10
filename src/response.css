@@ -1,9 +1,83 @@
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 360px) {
     body {
-      background-color: lightblue;
+      background-color: rgb(10, 125, 163);
       
       
     }
+
+
+    .b1{
+      left: 10%;
+    }
+    .b2{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .b3{
+      right: 10px;
+    }
+
+
+
+
+
+
+/* parte da rede social ----------------------------------------------------------------------- */
+.tela_social{
+  
+  height: 140px;
+  position: relative; 
+ 
+
+}
+
+.youtube,.github ,.instagram{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-shadow: 0px 0px 10px  black;
+    box-shadow: 2px 2px #888888;
+}
+
+
+.github,.g1{
+  left:50%;
+  position: absolute;
+  transform:translateX(-50%);
+  
+}
+.g1{
+  pointer-events: none;
+  top: 120px;
+  color: black;
+}
+
+.youtube,.y1{
+  transform:translateX(-50%);
+  left: 60px;
+  position: absolute;
+  
+}
+.y1{
+  pointer-events: none;
+  top: 120px;
+  color: black;
+   
+  }
+  .instagram,.i1{
+    transform:translateX(50%);
+  right: 60px;
+  position: absolute;
+}
+.i1{
+  pointer-events: none;
+  top: 120px;
+  color: black;
+
+}
+
+
     iframe{
         width: 50%;
         height: 50%;
