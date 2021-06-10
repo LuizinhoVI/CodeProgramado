@@ -3,6 +3,7 @@ body{
   margin: 0;
   overflow-x: hidden;
   background-color: #e9ecef;
+  padding-top: 90px;
 }
 
 /* letra geral ------------------------------------------------------------ */
@@ -13,32 +14,30 @@ body{
 
 
 /* menu inicial --------------------------------------------------------------- */
+.sub_menu{
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height:50px;
+  
+  
+
+  }
 .menu_inicial {
-    list-style-type: none;
-    margin: 0;
+  z-index: 1;
+  position: fixed;  
+  top: 0;
+  margin: 0;
     padding: 6px;
-    overflow: hidden;
     background-color: rgb(243, 243, 243);
     border-bottom: #ccc solid 2px;
     width: 100%;
   height: 50px;
-  }
-  
-  .p1,.s1,.t1 ,.l1 {
 
-    border: solid 1px red;
-    position: relative;
-    left: 50%;
-    transform: translateX(-100%);
-    float: left;
-    display: block;
-    color: rgb(12, 12, 12,10);
-    text-decoration: none;
-    padding: 5px;
-  
   }
   
- 
 
   
  .bt_1 {
@@ -50,15 +49,16 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
- border-radius: 90%;
+ border-radius: 15%;
   transition-duration: 0.2s;
   cursor: pointer;
  background-color: white; 
   color: black; 
   border: 1px solid #ccc;
-  width: 80px;
+  width: 110px;
   height: 50px;
   position: absolute;
+  box-shadow: #888888 1px 4px;
 }
 .b1{
   left: 10%;
@@ -70,14 +70,7 @@ body{
 .b3{
   right: 10%;
 }
-.sub_menu{
-  
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-width: 500px;
 
-}
 
 
 .bt_1:hover {
@@ -102,84 +95,95 @@ margin-top: -2px;
 
 /* parte da rede social ----------------------------------------------------------------------- */
 .tela_social{
-
-  height: 170px;
+  
+  height: 140px;
   position: relative; 
+ 
+
 }
 
 .youtube,.github ,.instagram{
-
+    
     margin-top: 10px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     text-shadow: 0px 0px 10px  black;
-      
+    box-shadow: 2px 2px #888888;
 }
+
 
 .github,.g1{
   left:50%;
   position: absolute;
   transform:translateX(-50%);
+  
 }
 .g1{
   pointer-events: none;
-  top: 110px;
+  top: 120px;
   color: black;
 }
 
 .youtube,.y1{
   transform:translateX(-50%);
-    left: 100px;
-    position: absolute;    
-  }
-  .y1{
-    pointer-events: none;
-    top: 110px;
-    color: black;
+  left: 100px;
+  position: absolute;
+  
+}
+.y1{
+  pointer-events: none;
+  top: 120px;
+  color: black;
    
   }
   .instagram,.i1{
     transform:translateX(50%);
-  /* margin-top: -300px; */
-    right: 100px;
-    position:absolute;
+ 
+  right: 120px;
+  position: absolute;
 }
 .i1{
   pointer-events: none;
-  top: 110px;
+  top: 120px;
   color: black;
 
 }
 
 /* texto do meio code programado */
 .tema{
-  top: -20px;
+  top: 10px;
   position: relative;
-    font-size: 50px;
-  
+    font-size: 60px;
+
   }
+
   /* timeline da pagina  */
   .timeline{
-    width: 50%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color:rgb(255, 255, 255);
-    border: solid 3px #ccc;
-    height: 1800px;
+    top: -80px;
+    height: 2000px;
+    border: solid red 5px;
   }
   .sub_quadrado1{
-    width: 100%;
+    
+    position: relative;
+    transform: translateX(-100%);
+    width: 50%;
+    left: 50%;
     height: 500px;
-    border: solid 1px red;
-
+    top: 50px;
+    bottom: 20px;
+    background-color:rgb(255, 255, 255);
+    border: solid 3px #ccc;
+    
   }
 
 /* parte do youtube ------------------------------------------------------------------ */
 
 .tela_youtube{
   /* border: solid red 1px; */
+  top: 90px;
   width: 100%;
   height: 310px;
   position: relative;
@@ -187,18 +191,20 @@ margin-top: -2px;
   }
 
   iframe{
-    width: 400px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
+    position: static;
+    
   }
 
 
 .quadrado{
-border: solid black 1px;
-width: 300px;
-height: 250px;
+
+width: 400px;
+height: 350px;
 margin-top: 30px;
 position: relative;
-left: -7%;
+
 
 }
 .q1{
