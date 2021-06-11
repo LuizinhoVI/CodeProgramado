@@ -1,57 +1,50 @@
-@media only screen and (max-width: 320px) {
 
+@media only screen and (max-width: 320px){
 
-  .sub_menu{
-    width: 100%;
-    height:90px;
-    border: solid blue 10px;
+/*time line */
+  .timeline{
+    position: relative;
+    top: ;
+    height: 2000px;
+    border: solid red 5px;
   }
 
-  .bt_1{
-    width: 70px;
+/*menu inicial */
+.sub_menu{
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border: solid red 3px;
+  padding: 6px;
+  background-color: red;
   }
-  .b1{
-    left: 15%;
-  }
-  .b2{
-      left: 50%;
-      transform: translateX(-50%);
-  }
-  .b3{
-    right: 15%;
-  }
-
-
-
+.bt_1{
+  width: 90px;
+}
+.b1{left: 18%;}
+.b2{left: 50%;}
+.b3{right: 18%;}
 }
 
 
-
 @media only screen and (max-width: 425px) {
-   
-/* tela do menu inicial  */
-    .sub_menu{
-  
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height:50px;
-      border: solid 1px red;
-      
-    
-      }
-    .b1{
-      left: 10%;
-    }
-    .b2{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .b3{
-      right: 10px;
+    body {
+      margin: 0;
     }
 
+/*menu inicial */
+.sub_menu{
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  border: solid red 3px;
+  padding: 6px;
+
+  }
 
 
 
@@ -112,23 +105,26 @@
 
 }
 
-  /* formato do youtube  */
+
+
+/*videos do youtube*/
+
     iframe{
-        width: 50%;
-        height: 50%;
+        width: 200px;
+        height: 200px;
         position: static;
         display: none;
       }
 
-    /* formato do quadrado do youtube */
-      .quadrado{
-        width: 50%;
-        height: 50%;
-        margin-top: 30px;
-        position: relative;
-          display: none;
-        
-        }
+.quadrado{
+
+width: 200px;
+height: 200px;
+margin-top: 30px;
+position: relative;
+
+
+}
 
 
   }
