@@ -33,7 +33,7 @@ body{
     background-color: rgb(243, 243, 243);
     border-bottom: #ccc solid 2px;
     width: 100%;
-  height: 50px;
+  height: 55px;
 
   }
   
@@ -160,7 +160,7 @@ margin-top: -2px;
   /* timeline da pagina  */
   .timeline{
     position: relative;
-    top: -80px;
+    top: 50px;
     height: 2000px;
     border: solid red 5px;
   }
