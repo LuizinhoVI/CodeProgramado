@@ -1,6 +1,4 @@
-
 /* parte do youtube ------------------------------------------------------------------ */
-
 .tela_youtube{
     /* border: solid red 1px; */
     
@@ -11,12 +9,14 @@
   position: relative;
     }
   
-  
+    /* quadrados dos textos------------------------- */
     .text1{
       width: 40%;
-      height: 15%;
+      height: 20%;
       left: 0;
-      border: solid #ccc 5px;
+      /* border: solid #ccc 5px; */
+      border-bottom: solid #ccc 2px;
+      border-top: solid #ccc 2px;
       position: absolute;
       transform: translateX(10%);
       text-align: center;
@@ -25,16 +25,17 @@
     }
   
     .t1{
-      top: 50px;
+      top: 20px;
     }
   .t2{
-  top: 450px;
+  top: 420px;
+  /* para add mais quadrado é só acrescentar mais 420px */
   }
   .t3{
-    top: 850px;
+    top: 820px;
     }
     .t4{
-      top: 1250px;
+      top: 1220px;
   
       }
       iframe{
@@ -44,9 +45,8 @@
       }
   
       .btdownload {
-        background-color: #4CAF50; /* Green */
+
         border: none;
-        color: white;
         padding: 9px 5px;
         text-align: center;
         text-decoration: none;
@@ -61,17 +61,17 @@
       .btdownload {
         background-color: white; 
         color: black; 
-        border: 2px solid #4CAF50;
+        border: 2px solid green;
       }
       
       .btdownload:hover {
-        background-color: #4CAF50;
+        background-color: green;
         color: white;
       }
       
   
   
-  
+  /* videos upados do youtube */
   .quadrado{
   
   width: 50%;
