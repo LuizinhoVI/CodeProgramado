@@ -80,13 +80,12 @@
   
   
   /* parte da rede social ----------------------------------------------------------------------- */
-  .tela_social{
-    
+  .tela_social{    
+
     height: 140px;
-    position: relative; 
-   
+    position: relative;
   
-  }
+}
   
   .youtube,.github ,.instagram{
       
