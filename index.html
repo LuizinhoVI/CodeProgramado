@@ -12,10 +12,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="src/estilo.css">
+       <script src="src/logica.js"></script>
         <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
            
     
+     
+
 
         </script>
         <style>
@@ -24,12 +27,15 @@
     </head>
 <body>
 <!-- Menun inicial com as configurações---------------------------------------- -->
-<ul class="menu_inicial">
-    <li class="portfolio p1 letra"><a class="l1" href="#home">Portfolio<img src="src/img/" alt=""></a></li>
-    <li class="sites s1 letra"><a class="l1"  href="#news">Sites</a></li>
-    <li class="tutoriais t1 letra"><a class="l1" href="#contact">Tutoriais</a></li>
+<div class="menu_inicial">
+    <div class="sub_menu">
+
+    <button class="letra bt_1 b1" onclick="mostrar_portfolio()">Portfolio </button>
+    <button class="letra bt_1 b2" onclick="mostrar_site()">Sites</button>
+    <button class="letra bt_1 b3" onclick="mostrar_tutoriais()">Tutorias</button>
     
-  </ul>
+    </div>
+  </div>
 
 <!-- rede SOCICAL PARA CONTATO -------------------------------------- -->
 <div align="center" class="tela_social">
@@ -41,7 +47,7 @@
 </div>
 
 <!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
-    <div  class="tela_youtube" align="center">
+    <div  class="tela_youtube" id="id_tutoriais" align="center">
         
         <div class="quadrado q1 letra " ><iframe width="200" height="200" src="https://www.youtube.com/embed/h5UtMqkDO4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> conexão via ancoragem</div>
 
@@ -54,14 +60,16 @@
     </div>
 
 
-    <div align="center" class="tela_portfolio">
-
-        
+    <div align="center" id="id_portfolio" class="tela_portfolio" >
+     Aqui vai ta todo o meu portfolio
     
-        
     </div>
-    <div>
-   
+
+
+
+  <div align="center" id="id_site" class="tela_portfolio" >
+     parte dos site disponiveis 
+    
     </div>
 
 
