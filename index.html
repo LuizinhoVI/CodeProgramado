@@ -1,155 +1,200 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="icon" href="src/img/centro.png" type="imagem/gif">
-        <meta http-equiv="X-UA-Compatible" content="Chrome">
-        <title>Code Programado</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/estilo.css">
-        <link rel="stylesheet" href="src/response.css">
-        <link rel="stylesheet" href="src/reset.css">
-        <link rel="stylesheet" href="src/site.css">
-        <link rel="stylesheet" href="src/menu_inicial.css">
-        <link rel="stylesheet" href="src/tutoriais.css">
-        <link rel="stylesheet" href="src/portfolio.css">
-        <script src="src/logica.js"></script>
-        <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="src/img/centro.png" type="imagem/gif">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <title>Code Programado</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilo.css">
+    <link rel="stylesheet" href="src/response.css">
+    <link rel="stylesheet" href="src/site.css">
+    <link rel="stylesheet" href="src/menu_inicial.css">
+    <link rel="stylesheet" href="src/tutoriais.css">
+    <link rel="stylesheet" href="src/portfolio.css">
+    <script src="src/logica.js"></script>
+    <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+</head>
 
-    </head>
 <body>
 
 
-<!-- Menun inicial com as configurações---------------------------------------- -->
-<div class="menu_inicial">
-    <div  style="position: absolute; left:10%; top:300px; border:solid red 1px;">
-        <br>
-      AVISO! SITE EM MANUTENÇÃO</div>
-    <div class="sub_menu">
-    <button class="letra bt_1 b1" onclick="mostrar_portfolio()">Portfolio </button>
-    <button class="letra bt_1 b2" onclick="mostrar_site()">Sites</button>
-    <button class="letra bt_1 b3" onclick="mostrar_tutoriais()">Tutorias</button>
+    <!-- Menun inicial com as configurações---------------------------------------- -->
+    <div class="menu_inicial">
+        <div style="position: absolute; left:10%; top:300px; border:solid red 1px;">
+            <br> AVISO! SITE EM MANUTENÇÃO</div>
+        <div class="sub_menu">
+            <button class="letra bt_1 b1" onclick="mostrar_portfolio()">Portfolio </button>
+            <button class="letra bt_1 b2" onclick="mostrar_site()">Sites</button>
+            <button class="letra bt_1 b3" onclick="mostrar_tutoriais()">Tutorias</button>
+        </div>
     </div>
-  </div>
 
-<!-- rede SOCICAL PARA CONTATO -------------------------------------- -->
-<div align="center" class="tela_social">
-        <a href="https://www.instagram.com/codeprogramado/" target="_blank"><img class="instagram"  src="src/img/logo_instagram.png" alt=""><div class="i1 letra"> Instagram</div></a> 
-        <a href="https://github.com/LuizinhoVI" target="_blank"><img class="github " src="src/img/logo_github.png" alt=""> <div class="g1 letra">Github</div></a>
-        <a href="https://www.youtube.com/c/codeprogramado" target="_blank"><img class="youtube" src="src/img/logo_youtube.png" alt=""><div class="y1 letra">Youtube</div> </a>
-        
-</div>
-<hr color="#888888" size="1">
-<div align="center" class="letra tema">Code Programado</div>
-<br>
-<!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
-<div  class="timeline" id="id_timeline">
+    <!-- rede SOCICAL PARA CONTATO -------------------------------------- -->
+    <div align="center" class="tela_social">
+        <a href="https://www.instagram.com/codeprogramado/" target="_blank"><img class="instagram" src="src/img/logo_instagram.png" alt="">
+            <div class="i1 letra"> Instagram</div>
+        </a>
+        <a href="https://github.com/LuizinhoVI" target="_blank"><img class="github " src="src/img/logo_github.png" alt="">
+            <div class="g1 letra">Github</div>
+        </a>
+        <a href="https://www.youtube.com/c/codeprogramado" target="_blank"><img class="youtube" src="src/img/logo_youtube.png" alt="">
+            <div class="y1 letra">Youtube</div>
+        </a>
 
-<!-- coteúdos dos videos ----------------------------------------------------------- -->
+    </div>
+    <hr color="#888888" size="1">
+    <div align="center" class="letra tema">Code Programado</div>
+    <br>
+    <!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
+    <div class="timeline" id="id_timeline">
 
- <div  class="tela_youtube" id="id_tutoriais">
-    <div class="text1 t1">
-        <br>
-        <h3>Aumentando o desempenho do Windows </h3>
-        <br>
-        <div>
-           <div> Habilitar Desempenho  máximo</div>  
-           <br>
-            <input type="text" value="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 " size="30%">
-            <input type="submit" value="copiar">
-            <br><br>
-            <div>Desabilita a hibernação para ter mais espaço no HD</div>
-                <br>    
-                <input type="text" name="" value="powercfg.exe /hibernate off" size="30%">
-                <input type="submit" value="copiar">
+        <!-- coteúdos dos videos ----------------------------------------------------------- -->
+
+        <div class="tela_youtube" id="id_tutoriais" style="display: none;">
+            <div class="text1 t1">
+                <br>
+                <h3>Aumentando o desempenho do Windows </h3>
+                <br>
+                <div>
+                    <div> Habilitar Desempenho máximo</div>
+                    <br>
+                    <input type="text" value="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 " size="30%">
+                    <input type="submit" value="copiar">
+                    <br><br>
+                    <div>Desabilita a hibernação para ter mais espaço no HD</div>
+                    <br>
+                    <input type="text" name="" value="powercfg.exe /hibernate off" size="30%">
+                    <input type="submit" value="copiar">
+                </div>
             </div>
-        </div>
-        <div class="quadrado q1 letra " ><iframe width="200" height="200" src="https://www.youtube.com/embed/R3ZgFCl-jow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-    
-    <div class="text1 t2">
-        <br>
-       <h3> Atalhos mais usados 2021</h3>
-        <br>
-        <div>
-            <input type="text">
-Ctrl + A    Selecionar todos os itens em um documento ou em uma janela <br>
-Ctrl + C     Copiar um item selecionado <br>
-Crtl  +v    Colar   <br> 
-Alt + Tab     Alternar entre programas abertos <br>
+            <div class="quadrado q1 letra "><iframe width="200" height="200" src="https://www.youtube.com/embed/R3ZgFCl-jow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
 
-        </div>    
-    </div>        
-    <div class="quadrado q2 letra"> <iframe width="200" height="200" src="https://www.youtube.com/embed/oigtR2boIzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-    </div>
+            <div class="text1 t2">
+                <br>
+                <h3> Atalhos mais usados 2021</h3>
+                <br>
+                <div>
 
-   
-    <div class="text1 t3">
-        <br>
-        <h3>Desligamento programado</h3>
-        <br>
-        <div width="100%">
-            Desligamento de uma forma automatica 
-         
-        </div>
-           </div>
-        <div class="quadrado q3 letra"><iframe width="200" height="200" src="https://www.youtube.com/embed/PqoMIlIGIy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-        
+
+                </div>
+            </div>
+            <div class="quadrado q2 letra"> <iframe width="200" height="200" src="https://www.youtube.com/embed/oigtR2boIzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="text1 t3">
+                <br>
+                <h3>Desligamento programado</h3>
+                <br>
+                <div>
+                    Copia e cola dentro do CMD
+                    <br>
+                    <input type="text" name="" value="shutdown -s -t 60">
+                    <input type="submit" value="copiar">
+                    <div align="left" style="left:20%; position: absolute;">
+                        <br>
+                        <font size="3">
+                            "shutdown"=C hamada do comando <br> "-s"= chamado para desligar <br> "-t" = chamado para usar o tempo em segundos <br> "60"= são os segundos para desligar <br>
+                        </font>
+
+                    </div>
+                </div>
+            </div>
+            <div class="quadrado q3 letra"><iframe width="200" height="200" src="https://www.youtube.com/embed/PqoMIlIGIy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="text1 t4">
+                <br>
+                <h3><b> Remover senha do Windows</b></h3>
+                <br>
+                <div>
+                    Download da ISO
+                    <br> 1 opção
+                    <font color="red" text="arial" size="3"> Media Fire </font>
+                    <a class="btdownload" href="https://download1979.mediafire.com/d75oh0issgfg/4i7jtlz3g1hklxy/dinocode.iso" target="_blank">Download</a>
+                </div>
+                <br>
+                <div>
+                    Download do Rufus
+                    <br> 1 opção
+                    <font color="red" text="arial" size="3"> Media Fire </font>
+                    <a class="btdownload" href="https://download2044.mediafire.com/8dddqersj0jg/4tww884as6gchjq/rufus-3.14.exe" target="_blank">Download</a>
+                </div>
+            </div>
+            <div class="quadrado q4 letra"><iframe width="200" height="200" src="https://www.youtube.com/embed/6mj5b-e4ZYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
         </div>
 
-    <div class="text1 t4">
-        <br>
-        <h3><b> Remover senha do Windows</b></h3>
-        <br>
-        <div> 
-        Download da ISO 
-        <br>
-        1 opção 
-        <font color="red" text="arial" size="3"> Media Fire </font>
-        <a class="btdownload"  href="https://download1979.mediafire.com/d75oh0issgfg/4i7jtlz3g1hklxy/dinocode.iso" target="_blank" >Download</a>
+        <!-- tela do portfolio ------------------------------------------------------->
+        <div align="center" id="id_portfolio" class="tela_portfolio" style="display:block;">
+
+            <!-- primeira colula da tabela  -->
+            <div class="primeira_coluna_p1">
+                <div class="quadrado_p1 area_p1">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p2">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p3">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p4">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+            </div>
+
+            <!-- segunda coluna da tela  -->
+            <div class="segunda_coluna_p2">
+                <div class="quadrado_p1 area_p1">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p2">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p3">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+                <div class="quadrado_p1 area_p4">
+                    <img src="" alt="">
+                    <p>PET monitor</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- tela do site  -->
+        <div align="center" id="id_site" class="tela_site" style="display: none;">
+            parte dos site disponiveis
+
+        </div>
+
+
+
+
+
+
     </div>
     <br>
-    <div>
-        Download do Rufus
-        <br> 
-        1 opção
-        <font color="red" text="arial" size="3"> Media Fire </font>
-        <a class="btdownload"  href="https://download2044.mediafire.com/8dddqersj0jg/4tww884as6gchjq/rufus-3.14.exe" target="_blank" >Download</a>
-
-           </div>
-           </div>
-        <div class="quadrado q4 letra"><iframe width="200" height="200" src="https://www.youtube.com/embed/6mj5b-e4ZYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-           
-    
-
-<!-- tela do portfolio -->
- <div align="center" id="id_portfolio" class="tela_portfolio" style="display:none;">
-     Aqui vai ta todo o meu portfolio
-    </div>
-
-    <!-- tela do site  -->
- <div align="center" id="id_site" class="tela_site"  style="display: none;">
-     parte dos site disponiveis 
-    
-    </div>
-
-
-
-</div>
-
-<br>
-<hr color="#ccc" size="2">
-<br>
-   <!-- final da pagina  -->
-
-</div>
+    <hr color="#ccc" size="2">
+    <br>
+    <!-- final da pagina  -->
     <div style="margin-top:85px;"> </div>
     <footer class="footer">
-       <div class="inst1 letra"> Author: <a  class="inst"
-     href="https://www.instagram.com/l_u_i_zzz_/" target="_blank">Luiz Vieira</a>
-    </div>
+        <div class="inst1 letra"> Author: <a class="inst" href="https://www.instagram.com/l_u_i_zzz_/" target="_blank">Luiz Vieira</a>
+        </div>
     </footer>
 </body>
+
 </html>

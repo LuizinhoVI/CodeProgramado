@@ -1,47 +1,52 @@
-body{
-  margin: 0;
-  overflow-x: hidden;
-  background-color: #e9ecef;
-  padding-top: 90px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #e9ecef;
+    padding-top: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 /* texto do meio code programado */
-.tema{
-  top: 10px;
-  position: relative;
-    font-size: 50px;
-  }
 
-  /* timeline da pagina  */
-  .timeline{
+.tema {
+    top: 10px;
     position: relative;
-    top:30px;
+    font-size: 50px;
+}
+
+
+/* timeline da pagina  */
+
+.timeline {
+    position: relative;
+    top: 30px;
     height: 1700px;
-  }
-  
+    border: solid rgb(109, 10, 190) 1px;
+}
+
 
 /* parte do hodapé ----------------------------------------------------------------------------*/
-.footer{
-text-align: center;
-border-top:#ccc solid 2px;
-background-color:rgb(243, 243, 243);
-position: static;
-height: 20px;
-width: 100%;
-padding-bottom: 10px;
-padding-top: 10px;
-bottom:0;
+
+.footer {
+    text-align: center;
+    border-top: #ccc solid 2px;
+    background-color: rgb(243, 243, 243);
+    position: static;
+    height: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    bottom: 0;
 }
 
-.inst{
-  color: rgb(36, 14, 226);
-  margin-top: -20px;
-  
+.inst {
+    color: rgb(36, 14, 226);
+    margin-top: -20px;
 }
-.inst1{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 
+.inst1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

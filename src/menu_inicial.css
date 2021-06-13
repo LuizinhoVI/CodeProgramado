@@ -1,5 +1,15 @@
-
-/* menu inicial --------------------------------------------------------------- */
+/* menu inicial 
+--------------------------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  }
+  body{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  ul,ol,li{
+      list-style: none;
+  }
 .sub_menu{
   
     position: absolute;

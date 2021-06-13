@@ -1,0 +1,30 @@
+.quadrado_p1 {
+    border: solid blue 2px;
+    position: absolute;
+    width: 17%;
+    height: 10%;
+}
+
+.area_p1 {
+    left: 5%;
+}
+
+.area_p2 {
+    left: 30%;
+}
+
+.area_p3 {
+    right: 30%;
+}
+
+.area_p4 {
+    right: 5%;
+}
+
+.segunda_coluna_p2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 250px;
+    border: solid red 1px;
+}
