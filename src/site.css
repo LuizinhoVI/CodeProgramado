@@ -1,0 +1,18 @@
+.tela_site {
+    height: 100%;
+    position: relative;
+}
+
+.texto2 {
+    height: 500px;
+    border: solid red 2px;
+    position: relative;
+}
+
+.texto {
+    height: 200px;
+    width: 200px;
+    border: solid red 2px;
+    left: 50px;
+    position: absolute;
+}
