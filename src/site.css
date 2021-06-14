@@ -1,18 +1,18 @@
 .tela_site {
+    width: 100%;
+    height: 100%;
+    position: auto;
+}
+
+.space_div1 {
+    width: 100%;
     height: 100%;
     position: relative;
 }
 
-.texto2 {
+.formulario {
     height: 500px;
+    width: 800px;
     border: solid red 2px;
     position: relative;
-}
-
-.texto {
-    height: 200px;
-    width: 200px;
-    border: solid red 2px;
-    left: 50px;
-    position: absolute;
 }
