@@ -11,18 +11,26 @@
 
 <body>
     <div align="center" class="time_line">
-        <b>  PET MONITOR </b>
-        <div class="texto_pet">
+        <div class="bloco1">
 
-            Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet e acaba perdendo
-            ele de vista. Vou lhe apresentar o Pet Monitor com as diversas ferramentas de localização para poder encontrar o seu pet o mais rápido possível com ajuda dos satélites temos a precisão e a localização exata, você só precisa fazer o cadastro,
-            informar os seus dados e do seu pet, depois colocar o rastreador na cólera e verificar no Website a localização do seu pet, como no contexto a seguir irei explicar como eu desenvolvi essa web site.
+            <div class="texto_pet">
+                <b><div align="center"> PET MONITOR</div> </b>
+                <p> Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet
+                    e acaba perdendo ele de vista. Vou lhe apresentar o Pet Monitor com as diversas ferramentas de localização para poder encontrar o seu pet o mais rápido possível com ajuda dos satélites temos a precisão e a localização exata, você só
+                    precisa fazer o cadastro, informar os seus dados e do seu pet, depois colocar o rastreador na cólera e verificar no Website a localização do seu pet, como no contexto a seguir irei explicar como eu desenvolvi essa web site.
+                </p>
+            </div>
+
+            <div align="center">
+                <b>Diagrama Caso de uso</b>
+                <img src="https://i.ibb.co/Smrxq8B/i1.png" alt="i1" border="0" width="50%">
+            </div>
+            <p class="texto_pet">Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+
         </div>
-        <br>
-        <b>Diagrama Caso de uso</b>
-        <br>
-        <a href="https://ibb.co/FYVWGMz"><img src="https://i.ibb.co/Smrxq8B/i1.png" alt="i1" border="0" /></a>
-        <p class="texto_pet">Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+
+
+
         <br>
         <b>
             diagrama de classes
@@ -55,8 +63,8 @@
         <br>
         <b>modelo fisico </b>
         <br>
-        <div>
-            <textarea name="" id="" cols="30" rows="10"> -- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL
+        <div class="texto_pet">
+            <textarea name="" id="" cols="120" rows="10"> -- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL
             ( ID_R INTEGER PRIMARY KEY, DATA_DE_ATIVACAO DATETIME ) CREATE TABLE DADOS_DOS_PETS ( ID_R INTEGER, NOME VARCHAR(10), TIPO VARCHAR(10), SEXO VARCHAR(10), IDADE DATETIME, FOREIGN KEY(ID_R) REFERENCES RASTREADOR_MOVEL (ID_R) )
         </textarea>
         </div>
@@ -67,7 +75,7 @@
         <br>
         <!-- colocar dentro de um input para copiar e colar  -->
         <div class="codigo_em c">
-            <textarea class="" id="" cols="100" rows="21">
+            <textarea class="" id="" cols="120" rows="21">
 #include &ltiostream&gt
 #include &ltlocale.h&gt
 #include &ltstdlib.h&gt
@@ -221,7 +229,7 @@ system("cls");
             PROGRAMAÇÃO WEB
         </div>
         <br>
-        <div>
+        <div class="texto_pet">
             <textarea name="" id="" cols="100" rows="10">
                 &lt!DOCTYPE html&gt
 &lthtml&gt
@@ -491,14 +499,14 @@ Hora
             </textarea>
         </div>
         <br>
-        <div>
+        <div class="texto_pet">
             O código fonte em cima mostrado vai retornar uma web site de consulta feita com algumas logicas em PHP, assim enviando para o usuário um visual mais atrativo.
         </div>
         <div>
             Banco de dados em SQL
         </div>
         <br>
-        <div>
+        <div class="texto_pet">
             <textarea name="" id="" cols="100" rows="80">
                 CREATE DATABASE pet_monitor;
 
@@ -604,12 +612,12 @@ VALUES
             </textarea>
         </div>
         <br>
-        <div>
+        <div class="texto_pet">
             Estou usando o EASYPHP para poder colocar web site no ar, e assim fazendo a importação do SQL para poder usar o PeMonitor.
         </div>
         <br>
         <!-- parte final  -->
-        <div>
+        <div class="texto_pet">
             Como mostrado anteriormente os modelos e os diagramas, as aplicações inseridas ao sistema web foi estruturado para atender todas as funções do rastreamento para o usuário ou tutor poder cadastra-lo e utilizar dentro da plataforma web. Sendo assim o Pet
             Monitor atender as demandas dos seus usuários, trazendo todas as informações localização do seu pet.
 
