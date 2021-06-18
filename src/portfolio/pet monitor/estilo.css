@@ -1,0 +1,19 @@
+b {
+    font-size: 30px;
+}
+
+.time_line {
+    text-align: center;
+}
+
+.texto_pet {
+    text-align: justify;
+    border: solid red 2px;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 30px;
+    display: flex;
+}

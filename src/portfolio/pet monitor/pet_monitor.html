@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div align="center" class="time_line">
+        <b>  INTRODUÇÃO </b>
+        <div class="texto_pet">
+
+            Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet e acaba perdendo
+            ele de vista. Vou lhe apresentar o Pet Monitor com as diversas ferramentas de localização para poder encontrar o seu pet o mais rápido possível com ajuda dos satélites temos a precisão e a localização exata, você só precisa fazer o cadastro,
+            informar os seus dados e do seu pet, depois colocar o rastreador na cólera e verificar no Website a localização do seu pet, como no contexto a seguir irei explicar como eu desenvolvi essa web site.
+        </div>
+        <br>
+        <b>Diagrama Caso de uso</b>
+        <br>
+        <a href="https://ibb.co/FYVWGMz"><img src="https://i.ibb.co/Smrxq8B/i1.png" alt="i1" border="0" /></a>
+        <p class="texto_pet">Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+        <br>
+        <b>
+            diagrama de classes
+            </b>
+        <br>
+        <a href="https://ibb.co/C5XFSjb"><img src="https://i.ibb.co/bgynG4s/i2.png" alt="i2" border="0"></a>
+        <div class="texto_pet">
+
+            <p>No diagrama de classe teremos a divisão das funções de cada classe representada em um retângulo fazendo a associação das classes para o Pet Monitor.</p>
+        </div>
+        <br>
+        <b>diagrama de atividade</b>
+        <br>
+        <a href="https://ibb.co/zfHhszt"><img src="https://i.ibb.co/MN5DnmJ/i3.png" alt="i3" border="0"></a>
+        <p class="texto_pet">No Diagrama de atividade teremos gráfico de fluxo mostrando o início e o fim de uma operação mostrada pelo diagrama. </p>
+        <br>
+        <b>diagrama de sequência</b>
+        <br>
+        <a href="https://ibb.co/0nxv1cM"><img src="https://i.ibb.co/grxhQ3T/i4.png" alt="i4" border="0"></a>
+        <p class="texto_pet">No Diagrama de sequência terá uma maneira mais clara para chegar no fim do desenvolvimento do sistema com a comunicação do Tutor e aplicação web.</p>
+        <br>
+        <b>modelo conceitual</b>
+        <br>
+        <a href="https://ibb.co/dkShtRB"><img src="https://i.ibb.co/mhmx03J/i5.png" alt="i5" border="0"></a>
+        <p class="texto_pet">Pet vai poder ter o rastreador para fazer a localização já com os dados cadastrados e enviara os dados gerados para web site.</p>
+        <br>
+        <b>modelo logico</b>
+        <br>
+        <a href="https://ibb.co/fS93JFQ"><img src="https://i.ibb.co/1nMCcQb/i7.png" alt="i7" border="0"></a>
+        <br>
+        <b>modelo fisico </b>
+        <br>
+        <div>-- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL ( ID_R INTEGER PRIMARY KEY, DATA_DE_ATIVACAO DATETIME
+            ) CREATE TABLE DADOS_DOS_PETS ( ID_R INTEGER, NOME VARCHAR(10), TIPO VARCHAR(10), SEXO VARCHAR(10), IDADE DATETIME, FOREIGN KEY(ID_R) REFERENCES RASTREADOR_MOVEL (ID_R) )
+        </div>
+
+        <br>
+        <!-- colocar dentro de um input para copiar e colar  -->
+        <div class="codigo_em c">
+
+            #include
+            <iostream>
+                #include
+                <locale.h>
+                    #include
+                    <stdlib.h>
+                        using namespace std; class dados_do_pet { public: string nome; int idade; string tipo; string sexo; int id; private: }; class dados_do_rastreador { public: string data; string localiza; string hora; int id; private: }; class rastreador_movel { public:
+                        int id; string data_atv; }; dados_do_pet *pet = new dados_do_pet; rastreador_movel *ras = new rastreador_movel; dados_do_rastreador *d_ras = new dados_do_rastreador; void cadastrar_pet(); void rastreador(); void relatorio_do_rastreador();
+                        char menu(); // menu -------------------------------------------------------------------------- int main() { setlocale(LC_ALL, " "); bool setup = true; while (setup) { char escolher; escolher = menu(); if (escolher == '1') { cadastrar_pet();
+                        } if (escolher == '2') { rastreador(); } if (escolher == '3') { relatorio_do_rastreador(); } if (escolher == '4') { setup = false; } } return 0; } void cadastrar_pet() { cout
+                        << "--cadasto do pet -> \n"; cout << " Nome..........: "; cin>> pet->nome; cout
+                            << endl; cout << " Tipo..........: "; cin>> pet->tipo; cout
+                                << endl; cout << " Idade.........: "; cin>> pet->idade; cout
+                                    << endl; cout << " Sexo...........: "; cin>> pet->sexo; cout
+                                        << endl; cout << "-------------------------------> \n"; system( "cls"); } void rastreador() { cout << "----------RASTREADOR-------------\n"; cout << "ID.................: "; cin>> ras->id; ras->id = d_ras->id; cout
+                                            << endl; cout << "Data de ativacao...: "; cin>> ras->data_atv; ras->data_atv = d_ras->data; cout
+                                                << endl; system( "cls"); } char menu() { char escolhas; cout << "----------PET Monitor----------\n"; cout << "1)Cadastrar pet \n"; cout << "2)Cadastrar rastreador \n"; cout << "3)Mostrar localizacao \n"; cout << "4) SAIR  \n"; cout << "Escolha... :";
+                                                    cin>> escolhas; system("cls"); return escolhas; } void relatorio_do_rastreador() { cout
+                                                    << "----------------relatoria dos rastreador-------------------\n"; d_ras->localiza = "-10098765 9875655"; cout
+                                                        << "ID :" << d_ras->id; cout
+                                                            << "\n"; cout << " DATA :"; system( "date /t"); cout << "HORA : "; system( "time /t"); cout << "LOCALIZACAO :"; cout << d_ras->localiza
+                                                                << endl; system( "pause"); system( "cls"); } </div>
+
+
+
+
+
+
+
+
+
+
+                                                                    <!-- parte final  -->
+                                                                    <p>
+                                                                        3 CONCLUSÃO Como mostrado anteriormente os modelos e os diagramas, as aplicações inseridas ao sistema web foi estruturado para atender todas as funções do rastreamento para o usuário ou tutor poder cadastra-lo e utilizar dentro da plataforma web. Sendo
+                                                                        assim o Pet Monitor atender as demandas dos seus usuários, trazendo todas as informações localização do seu pet.
+
+                                                                    </p>
+
+
+
+
+        </div>
+</body>
+
+</html>

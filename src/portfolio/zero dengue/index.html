@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Zero dengue</title>
+</head>
+
+<body>
+    <!-- div centralizador  -->
+    <div align="center">
+        <!-- introdução -->
+        <div>zero dengue</div>
+        <br>
+        <div>
+            O brasil está cada vez mais aparecendo foco da dengue por conta dos lugares que tendem a conter um pouco de água ao redor, assim já é o suficiente para poder o mosquito colocar os ovos nos locais. Com esse aumento da dengue vai ter muita demanda de funcionários
+            públicos para fazer as visitas dentro de casa, para facilitar o trabalho e acabar com a dengue o Zer@dengue
+        </div>
+        <br>
+        <div>O projeto se constitui em um simples cadastro que o usuário irá realizar, após feito o cadastro vai para uma página de denúncia assim realizando todo o formulário, entretanto uma equipe de monitoramento vai estar monitorando toda a denúncia do
+            usuário do outro lado do computador.</div>
+        <div>
+            Diagrama de caso de uso
+        </div>
+        <br>
+
+        <div>
+            <img src="https://i.ibb.co/LdKgsxK/1.png" alt="1" border="0">
+        </div>
+
+        <div>
+            Diagrama de classes
+        </div>
+        <br>
+        <div>
+
+            <img src="https://i.ibb.co/PD1DLNL/2.png" alt="2" border="0">
+        </div>
+        <br>
+        <div>
+            diagrama de atividade
+        </div>
+        <br>
+        <div>
+
+            <img src="https://i.ibb.co/PzMw1pF/3.png" alt="3" border="0">
+        </div>
+        <br>
+        <div>
+            O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML. O Laravel é um framework extremamente
+            fácil de usar, desde a instalação até sua utilização. Tudo pensando para que escreva quantidade mínima de código, ou, se preferir, escreva apenas códigos relacionados a regras do negócio. Atualmente, o Laravel encontra-se em sua versão 5.8,
+            sendo tão completo que passou a ser considerado um verdadeiro ecossistema para o desenvolvimento de aplicações e web services em PHP. Inclusive, o PHP é uma das linguagens de programação mais utilizadas no mundo, sendo utilizada por 79% dos
+            websites.
+
+        </div>
+        <br>
+        <div>
+            Parte do código fonte da tela inicial Salve o arquivo como inicio.php
+
+        </div>
+        <br>
+        <!-- codigo -->
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+                &lt!DOCTYPE html&gt
+                &lthtml lang="en"&gt
+                &lthead&gt
+                
+                    &ltmeta charset="UTF-8"&gt
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                    &lttitle&gtZER@DENGUE&lt/title&gt
+                    
+                
+                
+                 &ltstyle&gt
+                     .titulo{
+                
+                    color: white;
+                    font-size: 50px;
+                     }
+                .menu{
+                
+                    background: blue; 
+                    margin-top: 10%;
+                    width: 400px;
+                    height: 250px;
+                      border-radius: 25px;
+                  
+                  padding: 20px;
+                  width: 200px;
+                  height: 150px;
+                
+                  
+                }
+                
+                .entrada{
+                    font-size: 20px;
+                border-radius: 25px;
+                }
+                .bt{
+                
+                margin-top: 10px;
+                    width: 150px;
+                    height: 40px;   
+                }
+                 .p{
+                        color: white;
+                    }
+                 &lt/style&gt
+                
+                &lt/head&gt
+                
+                &ltbody bgcolor="black"&gt 
+                
+                &ltdiv align="center"&gt
+                
+                    &ltform action="denuncia.php" method="GET"&gt
+                
+                    &lttable  class="menu" &gt
+                        &lttd colspan="2"  align="center" height="100" class="titulo" &gt
+                            Zero@Dengue
+                        &lt/td&gt
+                        &lttr&gt
+                    
+                
+                        
+                        &lt!-- ENTRADA do email----------------------------------------------------------------------------&gt
+                        &lttd align="center"&gt
+                        &ltinput type="email" size="20" class="entrada" placeholder=" Email" id="email_"&gt
+                        &lt/td&gt
+                        &lttr&gt
+                
+                
+                                &lt!--ENTRADA DA senha ------------------------------------------------------------------- --&gt
+                                &lttd align="center"  &gt
+                                    &ltinput type="password" size="20" class="entrada"placeholder=" Senha" id="senha_"&gt
+                                    &lt/td&gt
+                                    &lttr&gt
+                                        &lt!-- botão para loguin------------------------------------------------------------- --&gt
+                        &lttd colspan="2" align="center" &gt
+                    &ltinput type="submit"  value="Entrar"  id="bt_" class="bt" &gt 
+                        &lt/td&gt
+                        &lttr&gt
+                            &lttr&gt
+                            &lt!-- BT DE CADASTRO------------------------------------------------------------------ --&gt
+                        &lttd align="center"&gt
+                        &lt/form&gt
+                
+                        &ltform action="cadastro.php" method="POST"&gt
+                
+                            &ltinput type="submit" value="Cadastrar" id="cadastro"&gt
+                
+                       &lt/form&gt
+                        &lt/td&gt
+                
+                    &lt/table&gt
+                    
+                &lt/div&gt
+                
+                &ltbr&gt
+                    &ltp class="p" align="center"&gt Zero Dengue é um site organizado por pessoas com o bem maior de manter a população 
+                       em segura, 
+                    &ltbr&gt
+                       sendo assim fizeram uma grande corrente de amigos para poder parar o propagação de casos de dengue. &ltbr&gt
+                        esse Site foi designado para fazer a sua parte, que é de ajudar os vigilantes de retirar os focos da dengue, &ltbr&gt
+                        entrando no site você vai efetuar o cadastro e fazer o loguin, e assim na parte da denucia vai colocar o local &ltbr&gt
+                        do endereço e a foto onde se localiza os focos da dengue.      
+                
+                    &lt/p&gt
+                
+                &lt/body&gt
+                &lt/html&gt
+                
+            
+            
+            </textarea>
+        </div>
+        <br>
+        <div>
+            Pagina da denúncia Salve o arquivo como denuncia.php
+
+        </div>
+        <br>
+        <!-- codigo -->
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+                &lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle&gtZER@DENGUE&lt/title&gt
+    
+
+
+ &ltstyle&gt
+     .titulo{
+
+    color: white;
+    font-size: 50px;
+     }
+.menu{
+
+    background: blue; 
+    margin-top: 10%;
+    width: 400px;
+    height: 250px;
+      border-radius: 25px;
+  
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+
+  
+}
+
+.entrada{
+    font-size: 20px;
+border-radius: 25px;
+}
+.bt{
+
+margin-top: 10px;
+    width: 150px;
+    height: 40px;   
+}
+ .p{
+        color: white;
+    }
+ &lt/style&gt
+
+&lt/head&gt
+
+&ltbody bgcolor="black"&gt 
+
+&ltdiv align="center"&gt
+
+    &ltform action="denuncia.php" method="GET"&gt
+
+    &lttable  class="menu" &gt
+        &lttd colspan="2"  align="center" height="100" class="titulo" &gt
+            Zero@Dengue
+        &lt/td&gt
+        &lttr&gt
+    
+
+        
+        &lt!-- ENTRADA do email----------------------------------------------------------------------------&gt
+        &lttd align="center"&gt
+        &ltinput type="email" size="20" class="entrada" placeholder=" Email" id="email_"&gt
+        &lt/td&gt
+        &lttr&gt
+
+
+                &lt!--ENTRADA DA senha ------------------------------------------------------------------- --&gt
+                &lttd align="center"  &gt
+                    &ltinput type="password" size="20" class="entrada"placeholder=" Senha" id="senha_"&gt
+                    &lt/td&gt
+                    &lttr&gt
+                        &lt!-- botão para loguin------------------------------------------------------------- --&gt
+        &lttd colspan="2" align="center" &gt
+    &ltinput type="submit"  value="Entrar"  id="bt_" class="bt" &gt 
+        &lt/td&gt
+        &lttr&gt
+            &lttr&gt
+            &lt!-- BT DE CADASTRO------------------------------------------------------------------ --&gt
+        &lttd align="center"&gt
+        &lt/form&gt
+
+        &ltform action="cadastro.php" method="POST"&gt
+
+            &ltinput type="submit" value="Cadastrar" id="cadastro"&gt
+
+       &lt/form&gt
+        &lt/td&gt
+
+    &lt/table&gt
+    
+&lt/div&gt
+
+&ltbr&gt
+    &ltp class="p" align="center"&gt Zero Dengue é um site organizado por pessoas com o bem maior de manter a população 
+       em segura, 
+    &ltbr&gt
+       sendo assim fizeram uma grande corrente de amigos para poder parar o propagação de casos de dengue. &ltbr&gt
+        esse Site foi designado para fazer a sua parte, que é de ajudar os vigilantes de retirar os focos da dengue, &ltbr&gt
+        entrando no site você vai efetuar o cadastro e fazer o loguin, e assim na parte da denucia vai colocar o local &ltbr&gt
+        do endereço e a foto onde se localiza os focos da dengue.      
+
+    &lt/p&gt
+
+&lt/body&gt
+&lt/html&gt
+
+            </textarea>
+        </div>
+        <br>
+        <div>
+            Parte do cadastro Salve o arquivo como cadastro.php
+        </div>
+        <br>
+        <!-- codigo -->
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+                &lt!DOCTYPE html &gt
+&lthtml lang="en" &gt
+
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle&gtDenuncia&lt/title&gt
+    
+
+    &ltstyle&gt
+
+    .menu{
+
+        margin-top: 4%;
+
+         background: white; 
+
+    width: 80%;
+    height: 20%;
+      border-radius: 25px;
+
+    }
+    .titulo{
+        font-size: 60px;
+    }
+
+   .enviar{
+    
+    margin-top:10px; 
+       width: 200px;
+       height: 50px;
+   }
+   .voltar{
+       margin-left:50px;
+       width: 200px;
+       height: 50px; 
+   }
+  .alerta{
+
+    margin-top:50px;
+
+
+
+  }
+  
+    &lt/style&gt
+
+    &ltscript&gt
+
+    &lt/script&gt
+
+&lt/head&gt
+
+&ltbody bgcolor="black"&gt
+&ltbr&gt
+    
+        &ltform action="inicio.php" method="POST" &gt
+        &lttable border="" class="menu" align="center"&gt
+        &lttd colspan="2" align="center" class="titulo"&gt Denucia &lt/td&gt
+        
+        &lttr&gt
+
+        &lt!-- endereço do local---------------------------------------------------------------------------------------&gt
+        &lttd width="300px"  align="center"&gt 
+           Endereço :&ltinput type="text" size="110" placeholder="Endereço..."&gt &lt/td&gt
+        &lttr&gt&lt/tr&gt        
+
+     &lttd colspan="" width="500px" height="500px"  align="center"&gt 
+        &lt!-- centro da foto ---------------------------------------------------------------------------------------------&gt
+     &ltinput type="image" src="dengue.jpg" id="mostrar_foto"&gt 
+        &lt/td&gt 
+     
+     &ltTR&gt
+         
+         
+           &lt!--foto do local ---------------------------------------------------------------------------------------&gt
+            &lttd colspan="2"&gt
+            &ltinput type="file" id="pegar_foto" name="ft" &gt
+            &lt/td&gt
+            &lttr&gt&lt/tr&gt
+            
+        &lttd&gt
+            &lt!-- entrada da descrição----------------------------------------------------------------------------------------- --&gt
+            Descrição obrigatória com o relato do local:  &ltinput type="text" size="80"  class="detalhes" &gt
+     &lt/td&gt
+     &lttr&gt
+         &lttd align="center"&gt
+            &ltinput type="submit" value="Enviar" class="enviar"&gt 
+
+            &ltinput type="submit" value="Voltar" class="voltar"&gt
+         &lt/td&gt
+       
+    &lt/table&gt 
+        &lt/form&gt
+    
+    &lt!-- -------------------------------------------------------------------------------------- --&gt
+
+&lttable border="2 "  align="center" bgcolor="white" class="alerta"&gt  
+
+&lttd align="center" &gt
+
+ &ltfont color="green"&gt   Denucia enviada com sucesso !&lt/font&gt  
+&lt/td&gt
+
+&lt/table&gt
+
+
+    &lt/body&gt
+
+&lt/html&gt
+
+Parte do cadastro
+Salve o arquivo como cadastro.php
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lt!-- &ltMETA HTTP-EQUIV="REFRESH" CONTENT="10;" &gt --&gt
+    &lttitle&gtZero@Dengue&lt/title&gt
+    &lth1 align="center " class="titulo"&gtZero@Dengue&lt/h1&gt
+
+    &ltstyle&gt
+        .menu {
+
+            font-size: 22px;
+color: blue;
+        }
+        .resposta{
+            font-size: 15px;
+
+        color: whiter       ;
+        }
+
+        .titulo {
+
+            font-size: 40px;
+
+        }
+        .tabela{
+            background: white;
+        }
+        .cadastro{
+            font-size:60px;
+        }
+    &lt/style&gt
+
+&lt/head&gt
+
+&ltbody bgcolor="black"&gt
+        &ltform action="inicio.php" method="POST" &gt
+            &lttable border="5" width="500px" height="100px" align="center" class="tabela"&gt
+                &lttd colspan="2" align="center" class="cadastro"&gt
+                    Cadastro
+                &lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align=" right" class="menu"&gt Nome Completo&lt/td&gt
+                &lttd&gt &ltinput type="text" class="resposta" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt E-mail &lt/td&gt
+                &lttd&gt &ltinput type="email" class="resposta" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Senha &lt/td&gt
+                &lttd&gt &ltinput type="password" class="resposta" size="30"&gt &lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Confirmar Senha &lt/td&gt
+                &lttd&gt &ltinput type="password" class="resposta" size="30"&gt &lt/td&gt
+                &lttr&gt&lt/tr&gt
+                
+                
+
+                &lttd align="right" class="menu"&gt RG &lt/td&gt
+                &lttd&gt &ltinput type="text" class="resposta" maxlength="9"  placeholder="00 000 000-0" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt CPF &lt/td&gt
+                &lttd &gt &ltinput type="text" class="resposta" size="10" maxlength="11" placeholder="000-000-000-00"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Endereço &lt/td&gt
+                &lttd&gt &ltinput type="text" class="resposta" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Telefone &lt/td&gt
+                &lttd&gt &ltinput type="tel" id="phone" maxlength="12"  size="30" class="resposta" name="phone" placeholder="00000-0000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Cidade &lt/td&gt
+                &lttd&gt &ltinput type="text" class="resposta" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gt Bairro &lt/td&gt
+                &lttd&gt &ltinput type="text" class="resposta" size="30"&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="right" class="menu"&gtEstado&lt/td&gt
+                &lttd&gt &ltselect class="resposta"  &gt
+                    &ltoption selected value="Acre"&gt Acre&lt/option&gt
+                    &ltoption value="Alagoas"&gtAlagoas&lt/option&gt
+                    &ltoption value="Amapá"&gtAmapá&lt/option&gt
+                    &ltoption value="Amazonas"&gtAmazonas&lt/option&gt
+                    &ltoption value="Bahia"&gtBahia&lt/option&gt
+                    &ltoption value="Ceará"&gtCeará&lt/option&gt
+                    &ltoption value="Distrito Federal"&gtDistrito Federal&lt/option&gt
+                    &ltoption value="Espírito Santo"&gtEspírito Santo&lt/option&gt
+                    &ltoption value="Goiás"&gtGoiás&lt/option&gt
+                    &ltoption value="Maranhão"&gtMaranhão&lt/option&gt
+                    &ltoption value="Mato Grosso"&gtMato Grosso&lt/option&gt
+                    &ltoption value="Mato Grosso do Sul"&gtMato Grosso do Sul&lt/option&gt
+                    &ltoption value="Minas Gerais"&gtMinas Gerais&lt/option&gt
+                    &ltoption value="Pará"&gtPará&lt/option&gt
+                    &ltoption value="Paraíba"&gtParaíba&lt/option&gt
+                    &ltoption value="Paraná"&gtParaná&lt/option&gt
+                    &ltoption value="Pernambuco"&gtPernambuco&lt/option&gt
+                    &ltoption value="Piauí"&gtPiauí&lt/option&gt
+                    &ltoption value="Rio de Janeiro"&gtRio de Janeiro&lt/option&gt
+                    &ltoption value="Rio Grande do Norte"&gtRio Grande do Norte &lt/option&gt
+                    &ltoption value="Rio Grande do Sul"&gtRio Grande do Sul&lt/option&gt
+                    &ltoption value="Rondônia"&gtRondônia&lt/option&gt
+                    &ltoption value="Roraima"&gtRoraima&lt/option&gt
+                    &ltoption value="Santa Catarina"&gtSanta Catarina&lt/option&gt
+                    &ltoption value="São Paulo"&gtSão Paulo&lt/option&gt
+                    &ltoption value="Sergipe"&gtSergipe&lt/option&gt
+                    &ltoption value="Tocantins"&gtTocantins&lt/option&gt
+
+                &lt/select&gt&lt/td&gt
+                &lttr&gt&lt/tr&gt
+                &lttd align="center" colspan="2 " height="100" align="center"&gt &ltinput type="submit" class="menu"
+                        value="Cadastrar"&gt &ltinput class="menu" type="reset" value="Limpar"&gt&lt/td&gt
+            &lt/table&gt
+        &lt/form&gt
+&lt/body&gt
+&lt/html&gt
+
+            </textarea>
+        </div>
+        <br>
+
+        <div>
+            Para escrever todas as paginas usei o visual Studio Code da Microsoft de como editor de código, e para visualizar as páginas criadas em PHP instalei o Easyphp
+        </div>
+        <br>
+        <div>
+            Para poder ter o máximo de prevenção contra a dengue vamos ter que aumentar mais a vigilância nos bairros e prepara as pessoas a usar o site do Zer@dengue, com auxílio da plataforma ficara mais fácil de fazer a denuncia do foco da dengue, que vai diminuir
+            gradativamente os casos.
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
