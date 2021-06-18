@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div align="center" class="time_line">
+        <b>  PET MONITOR </b>
+        <div class="texto_pet">
+
+            Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet e acaba perdendo
+            ele de vista. Vou lhe apresentar o Pet Monitor com as diversas ferramentas de localização para poder encontrar o seu pet o mais rápido possível com ajuda dos satélites temos a precisão e a localização exata, você só precisa fazer o cadastro,
+            informar os seus dados e do seu pet, depois colocar o rastreador na cólera e verificar no Website a localização do seu pet, como no contexto a seguir irei explicar como eu desenvolvi essa web site.
+        </div>
+        <br>
+        <b>Diagrama Caso de uso</b>
+        <br>
+        <a href="https://ibb.co/FYVWGMz"><img src="https://i.ibb.co/Smrxq8B/i1.png" alt="i1" border="0" /></a>
+        <p class="texto_pet">Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+        <br>
+        <b>
+            diagrama de classes
+            </b>
+        <br>
+        <a href="https://ibb.co/C5XFSjb"><img src="https://i.ibb.co/bgynG4s/i2.png" alt="i2" border="0"></a>
+        <div class="texto_pet">
+
+            <p>No diagrama de classe teremos a divisão das funções de cada classe representada em um retângulo fazendo a associação das classes para o Pet Monitor.</p>
+        </div>
+        <br>
+        <b>diagrama de atividade</b>
+        <br>
+        <a href="https://ibb.co/zfHhszt"><img src="https://i.ibb.co/MN5DnmJ/i3.png" alt="i3" border="0"></a>
+        <p class="texto_pet">No Diagrama de atividade teremos gráfico de fluxo mostrando o início e o fim de uma operação mostrada pelo diagrama. </p>
+        <br>
+        <b>diagrama de sequência</b>
+        <br>
+        <a href="https://ibb.co/0nxv1cM"><img src="https://i.ibb.co/grxhQ3T/i4.png" alt="i4" border="0"></a>
+        <p class="texto_pet">No Diagrama de sequência terá uma maneira mais clara para chegar no fim do desenvolvimento do sistema com a comunicação do Tutor e aplicação web.</p>
+        <br>
+        <b>modelo conceitual</b>
+        <br>
+        <a href="https://ibb.co/dkShtRB"><img src="https://i.ibb.co/mhmx03J/i5.png" alt="i5" border="0"></a>
+        <p class="texto_pet">Pet vai poder ter o rastreador para fazer a localização já com os dados cadastrados e enviara os dados gerados para web site.</p>
+        <br>
+        <b>modelo logico</b>
+        <br>
+        <a href="https://ibb.co/fS93JFQ"><img src="https://i.ibb.co/1nMCcQb/i7.png" alt="i7" border="0"></a>
+        <br>
+        <b>modelo fisico </b>
+        <br>
+        <div>
+            <textarea name="" id="" cols="30" rows="10"> -- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL
+            ( ID_R INTEGER PRIMARY KEY, DATA_DE_ATIVACAO DATETIME ) CREATE TABLE DADOS_DOS_PETS ( ID_R INTEGER, NOME VARCHAR(10), TIPO VARCHAR(10), SEXO VARCHAR(10), IDADE DATETIME, FOREIGN KEY(ID_R) REFERENCES RASTREADOR_MOVEL (ID_R) )
+        </textarea>
+        </div>
+        <br>
+        <div>
+            PROGRAMAÇÃO ORIENTADA A OBJETOS
+        </div>
+        <br>
+        <!-- colocar dentro de um input para copiar e colar  -->
+        <div class="codigo_em c">
+            <textarea class="" id="" cols="100" rows="21">
+#include &ltiostream&gt
+#include &ltlocale.h&gt
+#include &ltstdlib.h&gt
+using namespace std;
+
+
+class dados_do_pet
+{
+public:
+string nome;
+int idade;
+string tipo;
+string sexo;
+int id;
+
+private:
+};
+
+class dados_do_rastreador
+{
+
+public:
+string data;
+string localiza;
+string hora;
+int id;
+
+private:
+};
+
+class rastreador_movel
+{
+public:
+int id;
+string data_atv;
+};
+
+dados_do_pet *pet = new dados_do_pet;
+rastreador_movel *ras = new rastreador_movel;
+dados_do_rastreador *d_ras = new dados_do_rastreador;
+
+void cadastrar_pet();
+void rastreador();
+void relatorio_do_rastreador();
+char menu();
+
+// menu --------------------------------------------------------------------------
+int main()
+{
+setlocale(LC_ALL, " ");
+
+bool setup = true;
+
+while (setup)
+{
+    char escolher;
+    escolher = menu();
+
+    if (escolher == '1')
+    {
+        cadastrar_pet();
+    }
+    if (escolher == '2')
+    {
+        rastreador();
+    }
+    if (escolher == '3')
+    {
+
+        relatorio_do_rastreador();
+    }
+    if (escolher == '4')
+    {
+
+        setup = false;
+    }
+}
+
+return 0;
+}
+
+void cadastrar_pet()
+{
+
+cout &lt&lt "--cadasto do pet -&gt \n";
+cout &lt&lt " Nome..........: ";
+cin &gt&gt pet-&gtnome;
+cout &lt&lt endl;
+cout &lt&lt " Tipo..........: ";
+cin &gt&gt pet-&gttipo;
+cout &lt&lt endl;
+cout &lt&lt " Idade.........: ";
+cin &gt&gt pet-&gtidade;
+cout &lt&lt endl;
+cout &lt&lt " Sexo...........: ";
+cin &gt&gt pet-&gtsexo;
+cout &lt&lt endl;
+cout &lt&lt "-------------------------------&gt \n";
+system("cls");
+}
+
+void rastreador()
+{
+
+cout &lt&lt "----------RASTREADOR-------------\n";
+cout &lt&lt "ID.................: ";
+cin &gt&gt ras-&gtid;
+ras-&gtid = d_ras-&gtid;
+cout &lt&lt endl;
+cout &lt&lt "Data de ativacao...: ";
+cin &gt&gt ras-&gtdata_atv;
+ras-&gtdata_atv = d_ras-&gtdata;
+cout &lt&lt endl;
+system("cls");
+}
+
+char menu()
+{
+char escolhas;
+cout &lt&lt "----------PET Monitor----------\n";
+cout &lt&lt "1)Cadastrar pet \n";
+cout &lt&lt "2)Cadastrar rastreador \n";
+cout &lt&lt "3)Mostrar localizacao \n";
+cout &lt&lt "4) SAIR  \n";
+cout &lt&lt "Escolha... :";
+cin &gt&gt escolhas;
+system("cls");
+
+return escolhas;
+}
+
+void relatorio_do_rastreador()
+{
+cout &lt&lt "----------------relatoria dos rastreador-------------------\n";
+d_ras-&gtlocaliza = "-10098765  9875655";
+cout &lt&lt "ID :" &lt&lt d_ras-&gtid;
+cout &lt&lt "\n";
+cout &lt&lt " DATA :";
+system("date /t");
+cout &lt&lt "HORA : ";
+system("time /t");
+cout &lt&lt "LOCALIZACAO :";
+cout &lt&lt d_ras-&gtlocaliza &lt&lt endl;
+system("pause");
+system("cls");
+}
+                
+            </textarea> </div>
+        <br>
+        <div>
+            PROGRAMAÇÃO WEB
+        </div>
+        <br>
+        <div>
+            <textarea name="" id="" cols="100" rows="10">
+                &lt!DOCTYPE html&gt
+&lthtml&gt
+&lthead&gt
+&ltmeta charset="utf-8"&gt
+&ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+&lttitle&gt
+pet monitor
+&lt/title&gt
+&ltH1&gt align="center"&gtPet Monitor&lt/H1&gt
+&lt/head&gt
+
+&lt?php 
+
+// conexão com o banco de dados
+
+$db= 'pet_monitor' ;
+
+$mysqli = new mysqli('localhost', 'root', '', $db);
+
+mysqli_query($mysqli,$db);
+
+
+$consulta1= "SELECT *FROM mostrar_consulta";
+$con = $mysqli-&gtquery($consulta1) or die($mysqli-&gterror);
+$dado =$con-&gtfetch_array();
+
+// variaveis da localização
+
+//mapa do brasil 
+$mapa[0] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32829221.73891495!2d-66.8613251481618!3d-16.884085935754484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e1!4m0!4m0!5e1!3m2!1spt-BR!2sbr!4v1571338280322!5m2!1spt-BR!2sbr";
+// Tauapiranga
+$mapa[1] = "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d965.3381277784741!2d-36.20758410645599!3d-7.944793948994351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e1!4m3!3m2!1d-7.944000699999999!2d-36.207958!4m3!3m2!1d-7.9455974!2d-36.206827!5e1!3m2!1spt-BR!2sbr!4v1571337530678!5m2!1spt-BR!2sbr";
+// serra talhada
+$mapa[2] = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d407.5304120647488!2d-38.29048996124615!3d-7.9892012510065475!2m3!1f0!2f39.23782675393705!3f0!3m2!1i1024!2i768!4f35!4m13!3e2!4m5!1s0x7a7164932206e3f%3A0xf7a2eb815243b421!2sR.%20Monsenhor%20Pinto%20Campos%2C%20480%20-%20S%C3%A3o%20Cristovao%2C%20Serra%20Talhada%20-%20PE%2C%2056903-350!3m2!1d-7.985138999999999!2d-38.290545!4m5!1s0x7a7164f4d0b59ff%3A0x6692adf27510b7ef!2sR.%20Benicio%20de%20Souza%20Ramos%2C%20695%20-%20S%C3%A3o%20Cristovao%2C%20Serra%20Talhada%20-%20PE%2C%2056903-250!3m2!1d-7.987418!2d-38.290073!5e1!3m2!1spt-BR!2sbr!4v1571182905017!5m2!1spt-BR!2sbr";
+//Quixeramobim
+$mapa[3] = "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2293.8187466354016!2d-39.294305833672794!3d-5.191565229564769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d-5.1916942!2d-39.2950389!4m3!3m2!1d-5.1914020999999995!2d-39.291951999999995!5e1!3m2!1spt-BR!2sbr!4v1571188196703!5m2!1spt-BR!2sbr";
+
+// variaveis dos pet 
+$pet[0] ="selecionar";
+$pet[1] ="REX";
+$pet[2] ="KALISTA";
+$pet[3] ="DINO";
+//---------------------------------------------------------------------------------
+//variaveis 
+
+
+
+// LOGICAS 
+$contador=0;
+
+for ($i=0; $i &lt= 3; $i++) { 
+
+if (isset($_GET['bt'])) {
+
+if ($_GET['escolher_pet']==$pet[$i]) {
+
+$contador=$i;
+
+}
+
+}  }
+
+
+
+//$consultar = $mysqli-&gtquery($localizar_pet); 
+
+
+
+
+
+
+
+//-----------------------------------------------------------------
+
+?&gt
+
+&ltstyle&gt&gt
+
+
+h1{
+size: 50px;
+}
+.consulta_{
+margin-left: %;
+margin-top: 20px;
+
+}
+
+.mostrar_consulta{
+margin-top:px;
+}
+.mapa{
+margin-top:px;
+}
+&lt/style&gt
+
+&ltbody  bgcolor="black"&gt 
+&lttable align="center" cellspacing="2" border="0" width="100%"&gt
+
+
+&lttd&gt
+&lt!-- consultar  --------------------------------------------------------------------------------&gt
+&ltdiv align="left" class="consulta_"&gt
+&lttable border="3" bgcolor="white"&gt
+&ltform action="index.php" method="get" accept-charset="utf-8"&gt
+&lttd&gt colspan="2" align="center" style="font-size:30px;" &gt
+Consultar
+&lt/td&gt
+&lttr&gt
+&lttd&gt align="center"&gt
+Data Inicial    
+&lt/td&gt
+&lttd&gt &gt
+&ltinput type="date" name="data_inicial"&gt
+&lt/td&gt
+&lttr&gt
+&lttd&gt align="center"&gt
+Data Final
+&lt/td&gt
+&lttd&gt
+&ltinput type="date" name="data_final"&gt
+&lt/td&gt
+&lttr&gt
+&lttd&gt colspan="" align="center"&gt
+
+Pet
+
+&lt/td&gt
+
+&lttd align="left"&gt
+&ltselect name="escolher_pet" style="width:145px;"&gt
+&ltoption&gt selected &gtselecionar&lt/option&gt
+&ltoption&gt &gtREX&lt/option&gt
+&ltoption&gt &gtKALISTA&lt/option&gt
+&ltoption&gt &gtDINO&lt/option&gt
+
+&lt/select&gt
+&lt/td&gt
+&lttr&gt
+
+&lttd align="center" colspan="2"&gt
+&ltbr&gt
+&ltinput type="submit" value="Pesquisar" style="width:150px;" name="bt"&gt
+
+&lt/td&gt
+
+
+&lt/form&gt
+&lt/table&gt
+
+&lt/div&gt
+&lt/td&gt
+
+&lttd&gt
+
+&lt!-- meu mapa  --&gt
+&ltdiv align="center" class="mapa"&gt
+&lttable border="4" bgcolor="white"&gt 
+
+&lttd&gt
+&lt?php if ($contador==0) {  ?&gt
+&ltiframe src="&lt?php echo $mapa[0]; ?&gt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""&gt&lt/iframe&gt
+&lt?php }?&gt
+&lt?php if ($contador==1) {  ?&gt
+&ltiframe src="&lt?php echo $mapa[1]; ?&gt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""&gt&lt/iframe&gt
+&lt?php }?&gt
+&lt?php if ($contador==2) {  ?&gt
+&ltiframe src="&lt?php echo $mapa[2]; ?&gt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""&gt&lt/iframe&gt
+&lt?php }?&gt
+&lt?php if ($contador==3) {  ?&gt
+&ltiframe src="&lt?php echo $mapa[3]; ?&gt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""&gt&lt/iframe&gt
+&lt?php }?&gt
+&lt/td&gt
+&lt/table&gt
+
+&lt/div&gt
+
+
+&lt/td&gt
+
+&lttd&gt
+
+&lt!-- mostrar consulta --------------------------------------------------------------------------&gt
+&ltdiv align="right" class="mostrar_consulta"&gt
+
+&lttable border="3" cellspacing="3" bgcolor="white"&gt
+&lttd&gt align="center"&gt
+&ltb&gt
+Longitute
+&lt/b&gt
+&lt/td&gt
+&lttd&gt align="center"&gt
+&ltb&gt
+Latitude
+&lt/b&gt
+&lt/td&gt
+&lttd&gt align="center"&gt
+&ltb&gt
+Data
+&lt/b&gt
+&lt/td&gt
+&lttd&gt align="center"&gt
+&ltb&gt
+Hora
+&lt/b&gt
+&lt/td&gt
+
+&lttr&gt&lt/tr&gt
+
+&lt?php if ($contador==1) { ?&gt
+&lttd align="center"&gt
+&lt?php echo $dado['longitude'];?&gt
+&lt/td&gt
+
+&lttd align="center"&gt
+&lt?php  echo $dado['latitude'];?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo $dado['data_m'];?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo $dado['hora'];?&gt
+&lt/td&gt
+&lt?php } ?&gt
+
+&lt?php if ($contador==2) { ?&gt
+
+&lttd align="center"&gt
+&lt?php echo "-7.987366"; ?&gt
+&lt/td&gt
+
+&lttd align="center"&gt
+&lt?php  echo "-38.290065";?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo "2019-08-20";?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo "10:30:00";?&gt
+&lt/td&gt
+&lt?php } ?&gt
+
+&lt?php if ($contador==3) { ?&gt
+
+&lttd align="center"&gt
+&lt?php echo "-5.192050";?&gt
+&lt/td&gt
+
+&lttd align="center"&gt
+&lt?php  echo "-39.291737";?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo "2019-06-10";?&gt
+&lt/td&gt
+&lttd align="center"&gt
+&lt?php  echo "05:10:00";?&gt
+&lt/td&gt
+&lt?php } ?&gt
+&lt/table&gt
+&lt/div&gt
+&lt/td&gt
+&lt/table&gt
+&lt/body&gt
+&lt/html&gt
+
+            </textarea>
+        </div>
+        <br>
+        <div>
+            O código fonte em cima mostrado vai retornar uma web site de consulta feita com algumas logicas em PHP, assim enviando para o usuário um visual mais atrativo.
+        </div>
+        <div>
+            Banco de dados em SQL
+        </div>
+        <br>
+        <div>
+            <textarea name="" id="" cols="100" rows="80">
+                CREATE DATABASE pet_monitor;
+
+CREATE TABLE consulta(
+
+dt_inicial DATE, 
+dt_final DATE,
+s_pet  VARCHAR(20)
+
+)DEFAULT CHARACTER SET UTF8;
+
+INSERT INTO consulta
+(dt_inicial, dt_final, s_pet )
+VALUES
+( -- first row: values for the columns in the list above
+ '2019-03-02', '2019-03-02', 'REX'
+),
+( -- first row: values for the columns in the list above
+ '2019-03-02', '2019-03-02', 'KALISTA'
+),
+( -- first row: values for the columns in the list above
+ '2019-03-02', '2019-03-02', 'DINO'
+);
+
+
+CREATE TABLE mostrar_consulta(
+id_rastreador int NOT NULL AUTO_INCREMENT, 
+
+longitude VARCHAR(20),
+latitude VARCHAR(20),
+data_m DATE,
+hora TIME,
+primary key (id_rastreador)
+
+)DEFAULT CHARACTER SET UTF8;
+
+
+-- Insert rows into table 'TableName'
+INSERT INTO mostrar_consulta
+( -- columns to insert data into
+ longitude, latitude, data_m,hora 
+)
+VALUES
+( -- first row: values for the columns in the list above
+ '-7.945505',' -36.206866 ', '2019-03-02','05:00:00'
+),
+( -- first row: values for the columns in the list above
+ '-7.987366', '-38.290065 ', '2019-08-20','10:00:00'
+),
+( -- first row: values for the columns in the list above
+ '-5.192050', '-39.291737 ', '2019-06-10','05:00:00'
+);
+
+CREATE TABLE DADOS_DO_PET(
+id_rastreador int NOT NULL AUTO_INCREMENT ,
+nome VARCHAR(20),
+tipo ENUM('CANINO','FELINO','AVE'),
+idade DATE,
+sexo ENUM('F','M'),
+primary key (id_rastreador)
+)DEFAULT CHARACTER SET UTF8;
+
+
+-- Insert rows into table 'TableName'
+INSERT INTO DADOS_DO_PET
+( -- columns to insert data into
+ nome, tipo, idade,sexo 
+)
+VALUES
+( -- first row: values for the columns in the list above
+ 'REX',' CANINO ', '2011-09-02','M'
+),
+( -- first row: values for the columns in the list above
+ 'KALISTA', 'FELINO ', '2012-01-20','F'
+),
+( -- first row: values for the columns in the list above
+ 'DINO', 'CANINO ', '2013-02-10','M'
+);
+
+CREATE TABLE RASTREADOR_MOVEL(
+id_rastreador int NOT NULL AUTO_INCREMENT ,
+dt_ativacao DATE,
+primary key (id_rastreador)
+)DEFAULT CHARACTER SET UTF8;
+
+
+-- Insert rows into table 'TableName'
+INSERT INTO RASTREADOR_MOVEL
+( -- columns to insert data into
+ dt_ativacao 
+)
+VALUES
+( -- first row: values for the columns in the list above
+ '2019-09-02'
+),
+( -- first row: values for the columns in the list above
+ '2019-01-20'
+),
+( -- first row: values for the columns in the list above
+ '2019-02-10'
+);
+
+            </textarea>
+        </div>
+        <br>
+        <div>
+            Estou usando o EASYPHP para poder colocar web site no ar, e assim fazendo a importação do SQL para poder usar o PeMonitor.
+        </div>
+        <br>
+        <!-- parte final  -->
+        <div>
+            Como mostrado anteriormente os modelos e os diagramas, as aplicações inseridas ao sistema web foi estruturado para atender todas as funções do rastreamento para o usuário ou tutor poder cadastra-lo e utilizar dentro da plataforma web. Sendo assim o Pet
+            Monitor atender as demandas dos seus usuários, trazendo todas as informações localização do seu pet.
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
 }
 
 .space_div2 {
-    height: 900px;
+    height: 100%;
     width: 100%;
     position: relative;
     border: red solid 2px;
@@ -23,6 +23,7 @@
 }
 
 .primeira_coluna_p1 {
+    /* border: solid red 3px; */
     display: flex;
     justify-content: space-between;
     list-style: 10px;
@@ -52,4 +53,12 @@
     height: 200px;
     border: solid red 3px;
     text-align: center;
+}
+
+.portfolio_mostra {
+    font-size: 50px;
+}
+
+.pet_monitor {
+    height: 5450px;
 }
