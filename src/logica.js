@@ -32,3 +32,7 @@ function mostrar_portfolio() {
     tutorial.style.display = "none";
 
 }
+
+function pet_monitor() {
+    pet_ = document.getElementById('')
+}
