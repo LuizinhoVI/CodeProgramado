@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    /* border: solid red 2px; */
 }
 
 .space_div2 {
@@ -57,6 +58,7 @@
 
 .portfolio_mostra {
     font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(97, 96, 96);
 }
 
 .pet_monitor {

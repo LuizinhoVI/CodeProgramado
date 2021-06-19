@@ -13,6 +13,8 @@ body {
     top: 10px;
     position: relative;
     font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgb(97, 96, 96);
 }
 
 
