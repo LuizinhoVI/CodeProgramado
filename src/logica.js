@@ -34,5 +34,8 @@ function mostrar_portfolio() {
 }
 
 function pet_monitor() {
-    pet_ = document.getElementById('')
+    pet_ = document.getElementById('portfolio_pet')
+    pet_.style.display = "block"
+
+
 }
