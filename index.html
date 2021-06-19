@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="src/portfolio.css">
     <link rel="stylesheet" href="src/response.css">
     <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script src="src/logica.js"></script>
-
+    <script src="src/logica.js">
+    </script>
+    <script>
+        window.history.pushState("object or string", "Title", "");
+    </script>
 </head>
 
 <body>
@@ -49,15 +52,15 @@
         <img src="src/img/view.png" width="30" alt="">
         <img src='https://www.counter12.com/img-zZbza1z2DcaDWBbZ-26.gif' border='0' alt='contador de acesso grátis'>
         <script type='text/javascript' src='https://www.counter12.com/ad.js?id=zZbza1z2DcaDWBbZ'>
-        </script><b>visitas</b>
+        </script>
     </div>
 
-    <!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
     <div class="timeline" id="id_timeline">
 
-        <!-- conteudo dos tutoriais  ----------------------------------------------------------- -->
 
-        <div class="tela_youtube" id="id_tutoriais" align="center" style="display:block;">
+
+        <!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
+        <div class="tela_youtube" id="id_tutoriais" align="center" style="display:none;">
             <div class="portfolio_mostra">T U T O R I A L</div>
             <br>
             <hr>
@@ -148,19 +151,19 @@
                     </div>
                 </div>
             </div>
-
+        </div>
             <!-- tela do portfolio ------------------------------------------------------->
             <div align="center " id="id_portfolio " class="tela_portfolio " style="display:none; ">
                 <br>
                 <div class="portfolio_mostra ">P O R T F O L I O</div>
                 <br>
                 <!-- primeira colula da tabela  -->
-                <div class="space_div2 ">
+                
 
                     <div class="primeira_coluna_p1 ">
 
-                        <div class="quadrado_p1 area_p1 ">
-                            <img class="imagem_p " onclick="pet_monitor() " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
+                        <div class="quadrado_p1 area_p1 "onclick="pet_monitor() " >
+                            <img class="imagem_p " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
                             <div class="letra_centro ">Pet monitor</div>
                         </div>
                         <div class="quadrado_p1 area_p2 ">
@@ -175,15 +178,12 @@
                             <img src="https://i.ibb.co/yQ3C87V/capa4.png " alt=" " class="imagem_p ">
                             <p class="letra_centro ">Pulse ADS</p>
                         </div>
-
-
                         <div class="quadrado_p1 area_p6 ">
                             <img src="https://i.ibb.co/zNyrq6k/capa5.png " alt=" " class="imagem_p ">
                             <p class="letra_centro ">Zero dengue</p>
                         </div>
-
-
-                    </div>
+                        
+                   
                 </div>
                 <br>
                 <br>
@@ -243,7 +243,8 @@
 
 
         </div>
-        <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: block; ">
+
+        <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
             <div align="center " class="letra tema ">Code Programado</div>
             <br>
             <div>

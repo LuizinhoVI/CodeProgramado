@@ -2,14 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    /* border: solid red 2px; */
-}
-
-.space_div2 {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /* border: red solid 2px; */
+    border: solid red 2px;
 }
 
 .quadrado_p1 {
