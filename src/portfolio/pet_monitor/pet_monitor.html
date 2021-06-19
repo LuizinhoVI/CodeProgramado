@@ -13,73 +13,85 @@
     <div align="center" class="time_line">
         <div class="bloco1">
 
-            <div class="texto_pet">
-                <b><div align="center"> PET MONITOR</div> </b>
-                <div> Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet
+            <div class="texto_pet pet1">
+                <b><div align="center"> PET MONITOR </div> </b>
+                <p> Como qualquer dia normal de uma pessoa ela decide passear com o seu Pet pelas praças e ruas da cidade sem nenhuma preocupação, porem ela se depara com outro animal na rua, e seu Pet começa corre atrás dele assim você se separa do seu Pet
                     e acaba perdendo ele de vista. Vou lhe apresentar o Pet Monitor com as diversas ferramentas de localização para poder encontrar o seu pet o mais rápido possível com ajuda dos satélites temos a precisão e a localização exata, você só
                     precisa fazer o cadastro, informar os seus dados e do seu pet, depois colocar o rastreador na cólera e verificar no Website a localização do seu pet, como no contexto a seguir irei explicar como eu desenvolvi essa web site.
-                </div>
+                    <div align="center"><b>Diagrama Caso de uso</b>
+                    </div>
+                    <p>Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+                </p>
             </div>
 
             <div>
-                <b>Diagrama Caso de uso</b>
+
                 <div>
                     <img src="https://i.ibb.co/Smrxq8B/i1.png" alt="i1" border="0" width="100%">
                 </div>
             </div>
 
         </div>
+        <div class="bloco1">
+            <div class="texto_pet">
+                <div align="center"> <b>
+                    diagrama de classes
+                </b></div>
+                <p>No diagrama de classe teremos a divisão das funções de cada classe representada em um retângulo fazendo a associação das classes para o Pet Monitor.</p>
+            </div>
+            <div>
 
-        <p class="texto_pet">Diagrama de caso de uso mostrado anteriormente, o PetMonitor estar interagindo com o usuário que é o tutor de forma que possa receber e enviar as informações que o tutor e o rastreador precisa.</p>
+                <img src="https://i.ibb.co/bgynG4s/i2.png" alt="i2" border="0">
+            </div>
 
-
-
-
-        <br>
-        <b>
-            diagrama de classes
-            </b>
-        <br>
-        <a href="https://ibb.co/C5XFSjb"><img src="https://i.ibb.co/bgynG4s/i2.png" alt="i2" border="0"></a>
-        <div class="texto_pet">
-
-            <p>No diagrama de classe teremos a divisão das funções de cada classe representada em um retângulo fazendo a associação das classes para o Pet Monitor.</p>
         </div>
-        <br>
-        <b>diagrama de atividade</b>
-        <br>
-        <a href="https://ibb.co/zfHhszt"><img src="https://i.ibb.co/MN5DnmJ/i3.png" alt="i3" border="0"></a>
-        <p class="texto_pet">No Diagrama de atividade teremos gráfico de fluxo mostrando o início e o fim de uma operação mostrada pelo diagrama. </p>
-        <br>
-        <b>diagrama de sequência</b>
-        <br>
-        <a href="https://ibb.co/0nxv1cM"><img src="https://i.ibb.co/grxhQ3T/i4.png" alt="i4" border="0"></a>
-        <p class="texto_pet">No Diagrama de sequência terá uma maneira mais clara para chegar no fim do desenvolvimento do sistema com a comunicação do Tutor e aplicação web.</p>
-        <br>
-        <b>modelo conceitual</b>
-        <br>
-        <a href="https://ibb.co/dkShtRB"><img src="https://i.ibb.co/mhmx03J/i5.png" alt="i5" border="0"></a>
-        <p class="texto_pet">Pet vai poder ter o rastreador para fazer a localização já com os dados cadastrados e enviara os dados gerados para web site.</p>
-        <br>
-        <b>modelo logico</b>
-        <br>
-        <a href="https://ibb.co/fS93JFQ"><img src="https://i.ibb.co/1nMCcQb/i7.png" alt="i7" border="0"></a>
-        <br>
-        <b>modelo fisico </b>
-        <br>
-        <div>
-            <textarea name="" id="" cols="120" rows="10"> -- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL
-            ( ID_R INTEGER PRIMARY KEY, DATA_DE_ATIVACAO DATETIME ) CREATE TABLE DADOS_DOS_PETS ( ID_R INTEGER, NOME VARCHAR(10), TIPO VARCHAR(10), SEXO VARCHAR(10), IDADE DATETIME, FOREIGN KEY(ID_R) REFERENCES RASTREADOR_MOVEL (ID_R) )
-        </textarea>
+        <div class="bloco1">
+            <div class="texto_pet">
+                <div>
+                    <div align="center"> <b>diagrama de atividade</b></div> No Diagrama de atividade teremos gráfico de fluxo mostrando o início e o fim de uma operação mostrada pelo diagrama. </div>
+            </div>
+            <img src="https://i.ibb.co/MN5DnmJ/i3.png" alt="i3" border="0">
+
         </div>
-        <br>
-        <div>
-            PROGRAMAÇÃO ORIENTADA A OBJETOS
+
+        <div class="bloco1">
+
+            <div class="texto_pet">
+                <div align="center"> <b>diagrama de sequência</b></div>
+                No Diagrama de sequência terá uma maneira mais clara para chegar no fim do desenvolvimento do sistema com a comunicação do Tutor e aplicação web.</div>
+
+            <img src="https://i.ibb.co/grxhQ3T/i4.png" alt="i4" border="0">
         </div>
-        <br>
-        <!-- colocar dentro de um input para copiar e colar  -->
-        <div>
-            <textarea class="" id="" cols="120" rows="21">
+        <div class="bloco1">
+            <div class="texto_pet">
+
+                <div align="center"> <b>modelo conceitual
+        </b></div> Pet vai poder ter o rastreador para fazer a localização já com os dados cadastrados e enviara os dados gerados para web site.</div>
+            <div>
+                <br>
+                <img src="https://i.ibb.co/mhmx03J/i5.png" alt="i5" border="0">
+            </div>
+        </div>
+
+        <div class="bloco1">
+            <div class="texto_pet">
+                <div align="center"> <b>modelo fisico </b></div>
+                <textarea name="" id="" cols="72" rows="10"> -- Sql ANSI 2003 - brModelo. CREATE TABLE DADOS_DO_RASTREADOR ( ID_R INTEGER PRIMARY KEY, LOCALIZACAO_GEORREFERENCIADA VARCHAR(10), HORA DATETIME, DATA DATETIME ) CREATE TABLE RASTREADOR_MOVEL
+                    ( ID_R INTEGER PRIMARY KEY, DATA_DE_ATIVACAO DATETIME ) CREATE TABLE DADOS_DOS_PETS ( ID_R INTEGER, NOME VARCHAR(10), TIPO VARCHAR(10), SEXO VARCHAR(10), IDADE DATETIME, FOREIGN KEY(ID_R) REFERENCES RASTREADOR_MOVEL (ID_R) )
+                </textarea>
+            </div>
+            <div>
+                <br>
+                <img src="https://i.ibb.co/1nMCcQb/i7.png" alt="i7" border="0">
+            </div>
+        </div>
+
+        <div class="bloco1">
+            <div class="texto_pet">
+                <div align="center"><b> PROGRAMAÇÃO OOP</b>
+                </div>
+
+                <textarea class="" id="" cols="68" rows="21">
 #include &ltiostream&gt
 #include &ltlocale.h&gt
 #include &ltstdlib.h&gt
@@ -226,18 +238,18 @@ cout &lt&lt d_ras-&gtlocaliza &lt&lt endl;
 system("pause");
 system("cls");
 }
-                
-            </textarea> </div>
-        <br>
-        <div>
-            PROGRAMAÇÃO WEB
-        </div>
-        <br>
-        <div>
-            <textarea name="" id="" cols="100" rows="10">
-                &lt!DOCTYPE html&gt
-&lthtml&gt
-&lthead&gt
+
+                    </textarea>
+            </div>
+
+            <div>
+                <b> PROGRAMAÇÃO WEB</b>
+
+                <div>
+                    <textarea name="" id="" cols="100" rows="30">
+                        &lt!DOCTYPE html&gt
+                        &lthtml&gt
+                        &lthead&gt
 &ltmeta charset="utf-8"&gt
 &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
 &lttitle&gt
@@ -500,18 +512,21 @@ Hora
 &lt/body&gt
 &lt/html&gt
 
-            </textarea>
+                  </textarea>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="texto_pet">
-            O código fonte em cima mostrado vai retornar uma web site de consulta feita com algumas logicas em PHP, assim enviando para o usuário um visual mais atrativo.
-        </div>
-        <div>
-            Banco de dados em SQL
-        </div>
-        <br>
-        <div>
-            <textarea name="" id="" cols="100" rows="80">
+
+        <div class="bloco1">
+            <div class="texto_pet">
+                O código fonte em cima mostrado vai retornar uma web site de consulta feita com algumas logicas em PHP, assim enviando para o usuário um visual mais atrativo.
+            </div>
+            <div>
+                Banco de dados em SQL
+            </div>
+
+            <div>
+                <textarea name="" id="" cols="100" rows="80">
                 CREATE DATABASE pet_monitor;
 
 CREATE TABLE consulta(
@@ -614,19 +629,21 @@ VALUES
 );
 
             </textarea>
-        </div>
-        <br>
-        <div class="texto_pet">
-            Estou usando o EASYPHP para poder colocar web site no ar, e assim fazendo a importação do SQL para poder usar o PeMonitor.
-        </div>
-        <br>
-        <!-- parte final  -->
-        <div class="texto_pet">
-            Como mostrado anteriormente os modelos e os diagramas, as aplicações inseridas ao sistema web foi estruturado para atender todas as funções do rastreamento para o usuário ou tutor poder cadastra-lo e utilizar dentro da plataforma web. Sendo assim o Pet
-            Monitor atender as demandas dos seus usuários, trazendo todas as informações localização do seu pet.
-
+            </div>
         </div>
 
+        <div class="bloco1">
+            <div class="texto_pet">
+                Estou usando o EASYPHP para poder colocar web site no ar, e assim fazendo a importação do SQL para poder usar o PeMonitor.
+            </div>
+
+            <!-- parte final  -->
+            <div class="texto_pet">
+                Como mostrado anteriormente os modelos e os diagramas, as aplicações inseridas ao sistema web foi estruturado para atender todas as funções do rastreamento para o usuário ou tutor poder cadastra-lo e utilizar dentro da plataforma web. Sendo assim o Pet
+                Monitor atender as demandas dos seus usuários, trazendo todas as informações localização do seu pet.
+
+            </div>
+        </div>
 
 
 
