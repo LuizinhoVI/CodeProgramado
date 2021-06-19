@@ -13,14 +13,15 @@
         top: 30px;
         position: relative;
         flex-direction: row;
+        justify-content: space-around;
     }
     
     .texto_pet {
         padding: 10px;
         /* justify-content: space-between; */
         text-align: justify;
+        width: 40%;
         height: 100%;
-        width: 60%;
         position: relative;
         /* transform: translateX(-50%); */
         text-indent: 30px;
