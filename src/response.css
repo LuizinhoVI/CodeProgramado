@@ -1,4 +1,4 @@
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
     body {
       background-color: rgb(10, 125, 163);
       
@@ -6,15 +6,12 @@
     }
 /* tela do menu inicial  */
     .sub_menu{
-  
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 200px;
       height:50px;
       border: solid 1px red;
-      
-    
       }
     .b1{
       left: 10%;
