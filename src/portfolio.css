@@ -58,6 +58,7 @@
 .portfolio_mostra {
     font-size: 50px;
     text-shadow: 2px 2px 5px rgb(97, 96, 96);
+    position: relative;
 }
 
 .pet_monitor {

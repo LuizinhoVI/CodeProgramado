@@ -55,3 +55,26 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.barra-esquerda:before {
+    background-image: linear-gradient(270deg, #8d8a8a, transparent);
+    position: absolute;
+    content: "";
+    width: calc(40vw - 200px);
+    height: 2px;
+    top: 19%;
+}
+
+.barra-direita:before {
+    background-image: linear-gradient(90deg, #8d8a8a, transparent);
+    position: absolute;
+    content: "";
+    width: calc(40vw - 200px);
+    height: 2px;
+    top: 19%;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+}
