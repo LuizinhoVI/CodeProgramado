@@ -22,8 +22,10 @@ body {
 
 .timeline {
     position: relative;
-    top: 30px;
+    top: 10px;
     height: 100%;
+    width: 100%;
+    margin-bottom: 5vw;
     /* border: solid rgb(109, 10, 190) 1px; */
 }
 

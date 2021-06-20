@@ -17,12 +17,11 @@
     <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="src/logica.js">
     </script>
-    <script>
-        window.history.pushState("object or string", "Title", "");
-    </script>
+
 </head>
 
 <body>
+
     <!-- Menun inicial com as configurações---------------------------------------- -->
     <div class="menu_inicial">
 
@@ -32,7 +31,6 @@
             <button class="letra bt_1 b3" onclick="mostrar_tutoriais()">Tutorias</button>
         </div>
     </div>
-
     <!-- rede SOCIAL PARA CONTATO -------------------------------------- -->
     <div align="center" class="tela_social">
         <a href="https://www.instagram.com/codeprogramado/" target="_blank"><img class="instagram" src="src/img/logo_instagram.png" alt="">
@@ -47,7 +45,7 @@
 
     </div>
     <br>
-    <!-- contador de view -->
+    <!-- contador de view---------------------------------------------------------------- -->
     <div align=center>
         <img src="src/img/view.png" width="30" alt="">
         <img src='https://www.counter12.com/img-zZbza1z2DcaDWBbZ-26.gif' border='0' alt='contador de acesso grátis'>
@@ -55,17 +53,17 @@
         </script>
     </div>
 
+    <!-- ESPAÇO QUE VAI CONTER TODO CONTEUDO--------------------------------------------- -->
     <div class="timeline" id="id_timeline">
 
 
-
-        <!-- TELA INICAL DO YOUTUBE ------------------------------------------------------- -->
+        <!-- TELA INICAL DO tutoriais ------------------------------------------------------- -->
         <div class="tela_youtube" id="id_tutoriais" align="center" style="display:none;">
             <div class="portfolio_mostra">T U T O R I A L</div>
             <br>
             <hr>
             <div class="content-flex" align="center">
-                <div class="quadrado">
+                <div class="flex-box">
                     <iframe width="200" height="200" src="https://www.youtube.com/embed/R3ZgFCl-jow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
@@ -91,7 +89,7 @@
             <hr>
             <div class="content-flex" align="center">
 
-                <div class="quadrado"> <iframe width="200" height="200" src="https://www.youtube.com/embed/oigtR2boIzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="flex-box"> <iframe width="200" height="200" src="https://www.youtube.com/embed/oigtR2boIzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="text1">
@@ -104,7 +102,7 @@
             </div>
             <hr>
             <div class="content-flex" align="center">
-                <div class="quadrado q3 letra"><iframe width="200" height="200" src="https://www.youtube.com/embed/PqoMIlIGIy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="flex-box"><iframe width="200" height="200" src="https://www.youtube.com/embed/PqoMIlIGIy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
                 <div class="text1" align="center">
@@ -128,8 +126,7 @@
             </div>
             <hr>
             <div class="content-flex " align="center ">
-                <div class="quadrado q4 letra "><iframe width="200 " height="200 " src="https://www.youtube.com/embed/6mj5b-e4ZYE " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                            picture-in-picture " allowfullscreen></iframe>                    </div>
+                <div class="flex-box "><iframe width="200 " height="200 " src="https://www.youtube.com/embed/6mj5b-e4ZYE " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>                    </div>
 
 
                 <div class="text1 t4 ">
@@ -152,15 +149,15 @@
                 </div>
             </div>
         </div>
-            <!-- tela do portfolio ------------------------------------------------------->
-            <div align="center " id="id_portfolio " class="tela_portfolio " style="display:none; ">
+        <!-- tela do portfolio ------------------------------------------------------->
+        <div align="center " id="id_portfolio " class="tela_portfolio " style="display:block; ">
                 <br>
                 <div class="portfolio_mostra ">P O R T F O L I O</div>
                 <br>
                 <!-- primeira colula da tabela  -->
                 
 
-                    <div class="primeira_coluna_p1 ">
+                <div class="flex-content ">
 
                         <div class="quadrado_p1 area_p1 "onclick="pet_monitor() " >
                             <img class="imagem_p " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
@@ -185,9 +182,7 @@
                         
                    
                 </div>
-                <br>
-                <br>
-                <br>
+                
 
 
 
@@ -202,11 +197,9 @@
 
 
 
-            </div>
-
-
-            <!-- tela do site  -->
-            <div align="center " id="id_site " class="tela_site " style="display:none; ">
+        </div>
+        <!-- tela do site ------------------------------------------------------->
+        <div align="center " id="id_site " class="tela_site " style="display:none; ">
 
 
 
@@ -237,27 +230,27 @@
                     </div>
 
                 </div>
-            </div>
-
-
-
-
         </div>
 
-        <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
+
+        <!-- MENU DE NOTICIAS -------------------------------------------------------- -->
+         <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
             <div align="center " class="letra tema ">Code Programado</div>
             <br>
             <div>
-                TUDO VAI ESTAR dentro
+                
             </div>
+         </div>
         </div>
+
+       
         <br>
         <div>
 
         </div>
-        <br>
+        
         <hr color="#ccc " size="2 ">
-        <br>
+        
 
         <!-- final da pagina  -->
         <div class="footer ">

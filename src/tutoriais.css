@@ -17,9 +17,9 @@
     position: relative;
 }
 
-.quadrado {
-    width: 50%;
-    height: 350px;
+.flex-box {
+    width: 60%;
+    height: 40vw;
     position: relative;
     border: solid 5px #ccc;
     left: 50%;
