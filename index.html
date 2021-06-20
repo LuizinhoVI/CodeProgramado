@@ -22,14 +22,14 @@
 
 <body>
 
-    <!-- Menun inicial com as configurações---------------------------------------- -->
+    <!-- Menu inicial com as configurações---------------------------------------- -->
     <div class="menu_inicial">
 
         <div class="sub_menu">
             <button class="letra bt_1 b1" onclick="mostrar_portfolio()">PORTFOLIO </button>
-            <a href="src/CONTATO/contato.html">
-                <button class="letra bt_1 b2">  CONTATO</button></a>
-            <button class="letra bt_1 b3" onclick="mostrar_tutoriais() ">TUTORIAIS</button>
+
+            <button class="letra bt_1 b2">  CONTATO</button>
+            <button class="letra bt_1 b3" onclick="mostrar_tutoriai() ">TUTORIAIS</button>
         </div>
     </div>
     <div class="content-f ">
@@ -52,176 +52,86 @@
     <div class="timeline " id="id_timeline ">
 
 
-        <!-- TELA INICAL DO tutoriais ------------------------------------------------------- -->
-        <div class="tela_youtube " id="id_tutoriais " align="center " style="display:none; ">
-            <div class="portfolio_mostra ">T U T O R I A L</div>
+
+        <!-- tela do portfolio ------------------------------------------------------->
+        <div align="center " id="id_portfolio " class="tela_portfolio " style="display:none; ">
             <br>
-            <hr>
-            <div class="content-flex " align="center ">
-                <div class="flex-box ">
-                    <iframe width="200 " height="200 " src="https://www.youtube.com/embed/R3ZgFCl-jow " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <div class="portfolio_mostra ">P O R T F O L I O</div>
+            <br>
+            <!-- primeira colula da tabela portfolio -->
+            <div class="flex-content ">
+                <div class="box-content " onclick="pet_monitor () ">
+                    <img class="imagem_p " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
+                    <div class="letra_centro ">Pet monitor</div>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/ww1cZ4R/capa2.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Fazentec</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/8c7VVFM/capa3.png " class="imagem_p " alt=" ">
+                    <p class="letra_centro ">Joias raras S.A</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/yQ3C87V/capa4.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Pulse ADS</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/zNyrq6k/capa5.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Zero dengue</p>
                 </div>
 
-                <div class="text1 " align="center ">
-                    <h3>Aumentando o desempenho do Windows </h3>
-
-                    <div>
-                        <div> Habilitar Desempenho máximo</div>
-                        <br>
-                        <input type="text " value="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 " size="20% ">
-                        <input type="submit " value="copiar ">
-                        <br><br>
-                        <div>Desabilita a hibernação para ter mais espaço no HD</div>
-                        <br>
-                        <input type="text " name=" " value="powercfg.exe /hibernate off " size="20% ">
-                        <input type="submit " value="copiar ">
-                    </div>
-                    <br>
-
-                </div>
 
             </div>
-            <hr>
-            <div class="content-flex " align="center ">
-
-                <div class="flex-box "> <iframe width="200 " height="200 " src="https://www.youtube.com/embed/oigtR2boIzk " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-                </div>
-
-                <div class="text1 ">
-                    <br>
-                    <h3> Atalhos mais usados 2021</h3>
-                    <br>
-
-                </div>
-
+            <!-- inicio do arquivo pet monitor   -->
+            <div class="pet_monitor " id="portfolio_pet " style="display: none; ">
+                <iframe border="none " SameSite="None " src="src/portfolio/pet_monitor/pet_monitor.html " class="petm ">
+                            </iframe>
             </div>
-            <hr>
-            <div class="content-flex " align="center ">
-                <div class="flex-box "><iframe width="200 " height="200 " src="https://www.youtube.com/embed/PqoMIlIGIy0 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-
-                </div>
-                <div class="text1 " align="center ">
-                    <br>
-                    <h3>Desligamento programado</h3>
-                    <br>
-                    <div align="center ">
-                        Copia e cola dentro do CMD
-                        <br>
-                        <input type="text " name=" " value="shutdown -s -t 60 ">
-                        <input type="submit " value="copiar ">
-                        <div align="left " ">
+            <!-- final da tela do portfolio -->
             <br>
-            <font size="3 ">
-                "shutdown "=C hamada do comando <br> "-s "= chamado para desligar <br> "-t " = chamado para usar o tempo em segundos <br> "60 "= são os segundos para desligar <br>
-            </font>
-
         </div>
-    </div>
-    </div>
-                </div>
-                     <hr>
-            <div class="content-flex " align="center ">
-        <div class="flex-box "><iframe width="200 " height="200 " src="https://www.youtube.com/embed/6mj5b-e4ZYE " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>            </div>
+        <!-- tela do site ------------------------------------------------------->
+        <div align="center " id="id_site " class="tela_site " style="display:none; ">
 
+            <div class="space_div1 ">
 
-        <div class="text1 t4 ">
-            <br>
-            <h3><b> Remover senha do Windows</b></h3>
-            <br>
-            <div>
-                Download da ISO
-                <br> 1 opção
-                <font color="red " text="arial " size="3 "> Media Fire </font>
-                <a class="btdownload " href="https://download1979.mediafire.com/d75oh0issgfg/4i7jtlz3g1hklxy/dinocode.iso " target="_blank ">Download</a>
-            </div>
-            <br>
-            <div>
-                Download do Rufus
-                <br> 1 opção
-                <font color="red " text="arial " size="3 "> Media Fire </font>
-                <a class="btdownload " href="https://download2044.mediafire.com/8dddqersj0jg/4tww884as6gchjq/rufus-3.14.exe " target="_blank ">Download</a>
-            </div>
-        </div>
-             </div>
-         </div>
-    <!-- tela do portfolio ------------------------------------------------------->
-    <div align="center " id="id_portfolio " class="tela_portfolio " style="display:none; ">
-        <br>
-        <div class="portfolio_mostra ">P O R T F O L I O</div>
-        <br>
-        <!-- primeira colula da tabela portfolio -->
-        <div class="flex-content ">
-            <div class="box-content " onclick="pet_monitor () ">
-                <img class="imagem_p " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
-                <div class="letra_centro ">Pet monitor</div>
-            </div>
-            <div class="box-content ">
-                <img src="https://i.ibb.co/ww1cZ4R/capa2.png " alt=" " class="imagem_p ">
-                <p class="letra_centro ">Fazentec</p>
-            </div>
-            <div class="box-content ">
-                <img src="https://i.ibb.co/8c7VVFM/capa3.png " class="imagem_p " alt=" ">
-                <p class="letra_centro ">Joias raras S.A</p>
-            </div>
-            <div class="box-content ">
-                <img src="https://i.ibb.co/yQ3C87V/capa4.png " alt=" " class="imagem_p ">
-                <p class="letra_centro ">Pulse ADS</p>
-            </div>
-            <div class="box-content ">
-                <img src="https://i.ibb.co/zNyrq6k/capa5.png " alt=" " class="imagem_p ">
-                <p class="letra_centro ">Zero dengue</p>
-            </div>
-
-
-        </div>
-        <!-- inicio do arquivo pet monitor   -->
-        <div class="pet_monitor " id="portfolio_pet " style="display: none; ">
-            <iframe border="none " src="src/portfolio/pet_monitor/pet_monitor.html " class="petm "></iframe>
-        </div>
-        <!-- final da tela do portfolio -->
-        <br>
-    </div>
-    <!-- tela do site ------------------------------------------------------->
-    <div align="center " id="id_site " class="tela_site " style="display:none; ">
-
-        <div class="space_div1 ">
-
-            <div class="formulario ">
-                <form action=" ">
-                    <table border="1 ">
-                        <tr>
-                            <td>Nome</td>
-                            <td>
-                                <input type="text ">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>cidade</td>
-                            <td>
-                                <input type="text ">
-                            </td>
+                <div class="formulario ">
+                    <form action=" ">
+                        <table border="1 ">
                             <tr>
+                                <td>Nome</td>
                                 <td>
-
+                                    <input type="text ">
                                 </td>
                             </tr>
-                        </tr>
-                    </table>
-                </form>
+                            <tr>
+                                <td>cidade</td>
+                                <td>
+                                    <input type="text ">
+                                </td>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
             </div>
-
         </div>
-    </div>
 
 
-    <!-- MENU DE NOTICIAS -------------------------------------------------------- -->
-    <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
-        <div align="center " class="letra tema ">Code Programado</div>
-        <br>
-        <div>
+        <!-- MENU DE NOTICIAS -------------------------------------------------------- -->
+        <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
+            <div align="center " class="letra tema ">Code Programado</div>
+            <br>
+            <div>
 
+            </div>
         </div>
-    </div>
     </div>
     <hr>
     <br>
