@@ -1,5 +1,5 @@
 function mostrar_site() {
-    tutorial = document.getElementById('id_tutoriais')
+    tutorial = document.getElementById('id_tutoriais ')
     site = document.getElementById('id_site ')
     portfolio = document.getElementById('id_portfolio ')
     inicio = document.getElementById('inicio')
@@ -13,7 +13,7 @@ function mostrar_site() {
 
 function mostrar_tutoriais() {
 
-    tutorial = document.getElementById('id_tutoriais')
+    tutorial = document.getElementById('id_tutoriais ')
     site = document.getElementById('id_site ')
     portfolio = document.getElementById('id_portfolio ')
     iniciot = document.getElementById('inicio')
@@ -28,7 +28,7 @@ function mostrar_tutoriais() {
 
 function mostrar_portfolio() {
 
-    tutorial = document.getElementById('id_tutoriais')
+    tutorial = document.getElementById('id_tutoriais ')
     site = document.getElementById('id_site ')
     portfolio = document.getElementById('id_portfolio ')
     inicio = document.getElementById('inicio')
