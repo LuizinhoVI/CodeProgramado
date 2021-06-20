@@ -5,7 +5,7 @@
     /* border: solid red 2px; */
 }
 
-.quadrado_p1 {
+.box-content {
     display: flex;
     flex-wrap: wrap;
     width: 150px;
