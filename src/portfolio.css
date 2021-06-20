@@ -8,6 +8,8 @@
 .box-content {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    top: 30px;
     width: 150px;
     height: 150px;
     background-blend-mode: darken;
@@ -18,10 +20,13 @@
 
 .flex-content {
     /* border: solid red 3px; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
     display: flex;
     justify-content: space-between;
-    list-style: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 90%;
     height: 100%;
     margin-bottom: 20px;
@@ -56,5 +61,7 @@
 }
 
 .pet_monitor {
+    position: relative;
+    top: 50px;
     height: 3490px;
 }
