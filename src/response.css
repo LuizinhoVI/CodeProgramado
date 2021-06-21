@@ -1,28 +1,41 @@
-@media only screen and (max-width: 400px) {
-    body {
-      background-color: rgb(10, 125, 163);
+@media only screen and (max-width: 320px){
+
+/*menu inicial */
+.sub_menu{
   
-    }
-/* tela do menu inicial  */
-    .sub_menu{
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height:50px;
-      border: solid 1px red;
-      }
-    .b1{
-      left: 10%;
-    }
-    .b2{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .b3{
-      right: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border: solid red 3px;
+  padding: 6px;
+  background-color: red;
+  }
+.bt_1{
+  width: 90px;
+}
+.b1{left: 18%;}
+.b2{left: 50%;}
+.b3{right: 18%;}
+}
+
+
+@media only screen and (max-width: 425px) {
+    body {
+      margin: 0;
     }
 
+/*menu inicial */
+.sub_menu{
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  border: solid red 3px;
+  padding: 6px;
+
+  }
 
 
 
@@ -83,13 +96,25 @@
 
 }
 
-
+/*videos do youtube*/
     iframe{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         position: static;
-        
+        display: none;
       }
+
+.quadrado{
+
+width: 200px;
+height: 200px;
+margin-top: 30px;
+position: relative;
+
+
+}
+
+
 
 
 
