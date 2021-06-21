@@ -3,9 +3,11 @@
         overflow-x: hidden;
         background-color: #e9ecef;
     }
+    /* menu inicial  */
     
     .menu-home {
-        margin: 0;
+        position: fixed;
+        z-index: 1;
         width: 100%;
         height: 1.5cm;
         background-color: #040405;
@@ -22,10 +24,11 @@
     
     .opcao {
         position: relative;
-        width: 50px;
+        width: 60px;
         height: 50px;
-        right: 100%;
+        right: 40px;
         top: 5px;
+        cursor: pointer;
     }
     
     .reta {
@@ -54,14 +57,55 @@
         top: -10px;
         width: 70px;
         height: 70px;
+        left: 30px;
+        cursor: pointer;
         /* border: red 3px solid; */
+    }
+    /* tema principal */
+    
+    .tema {
+        font-size: 50px;
+        text-shadow: 2px 2px 5px rgb(97, 96, 96);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .content-f {
+        position: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: red 1px solid;
+        height: 100px;
+        width: 100%;
+        position: relative;
+        top: 90px;
+    }
+    
+    .barra-esquerda:before {
+        background-image: linear-gradient(270deg, #8d8a8a, transparent);
+        position: absolute;
+        content: "";
+        width: calc(40vw - 200px);
+        height: 2px;
+        top: 19%;
+    }
+    
+    .barra-direita:before {
+        background-image: linear-gradient(90deg, #8d8a8a, transparent);
+        position: absolute;
+        content: "";
+        width: calc(40vw - 200px);
+        height: 2px;
+        top: 19%;
+        right: 0;
     }
     /* inicio da caixa para contato  */
     
     .tela_contato {
         position: relative;
         border: solid red 2px;
-        top: 50px;
+        top: 200px;
     }
     
     .box {
@@ -82,3 +126,11 @@
         border-color: #e9ecef;
     }
     /* -------------------------------------------------------- */
+    /*  */
+    
+    .tela-logo {
+        width: 50%;
+        height: 100%;
+        border: black solid 1px;
+        position: relative;
+    }
