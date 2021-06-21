@@ -1,5 +1,13 @@
 @media only screen and (max-width: 320px){
 
+/*time line */
+  .timeline{
+    position: relative;
+    top: ;
+    height: 2000px;
+    border: solid red 5px;
+  }
+
 /*menu inicial */
 .sub_menu{
   

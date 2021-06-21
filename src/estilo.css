@@ -154,13 +154,13 @@ margin-top: -2px;
   top: 10px;
   position: relative;
     font-size: 60px;
-
+border: solid red 3px;
   }
 
   /* timeline da pagina  */
   .timeline{
     position: relative;
-    top: -80px;
+    top:30px;
     height: 2000px;
     border: solid red 5px;
   }
