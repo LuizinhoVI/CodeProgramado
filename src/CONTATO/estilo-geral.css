@@ -2,6 +2,12 @@
         margin: 0;
         overflow-x: hidden;
         background-color: #e9ecef;
+        width: auto;
+        height: 800px;
+    }
+    
+    main {
+        height: 100%;
     }
     /* menu inicial  */
     
@@ -72,9 +78,7 @@
     }
     
     .content-t {
-        position: relative;
-        flex-wrap: wrap;
-        flex-direction: row;
+        position: absolute;
         border: red 1px solid;
         height: 100px;
         width: 100%;
@@ -135,6 +139,51 @@
         box-shadow: 1px 1px 3px 1px;
         background-color: #e9ecef;
         border-color: #e9ecef;
+    }
+    
+    .img-div {
+        /* border: solid 2px red; */
+        display: flex;
+        width: 100%;
+        height: 90px;
+        justify-content: space-between;
+    }
+    
+    .img-cell,
+    .img-pc,
+    .img-web,
+    .img-wapp {
+        transition: width 0.1s;
+        width: 60px;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    .img-cell:hover,
+    .img-pc:hover,
+    .img-web:hover,
+    .img-wapp:hover {
+        width: 70px;
+    }
+    
+    .quadrado-ok {
+        /* border: solid red 3px; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .barra-ok {
+        width: 10px;
+        height: 10px;
+        border: solid 1px black;
+        position: relative;
+        border-radius: 50%;
+        top: 70px;
+        box-shadow: 1px 1px 0px 0px;
+        background: blue;
     }
     /* -------------------------------------------------------- */
     /*  */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="src/img/centro.png" type="imagem/gif">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <title>Code Programado</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilo.css">
+    <link rel="stylesheet" href="src/site.css">
+    <link rel="stylesheet" href="src/menu_inicial.css">
+    <link rel="stylesheet" href="src/tutoriais.css">
+    <link rel="stylesheet" href="src/portfolio.css">
+    <link rel="stylesheet" href="src/response.css">
+    <script data-ad-client="ca-pub-7353624638682553" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="src/logica.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Menu inicial com as configurações---------------------------------------- -->
+    <div class="menu_inicial">
+
+        <div class="sub_menu">
+            <button class="letra bt_1 b1" onclick="mostrar_portfolio()">PORTFOLIO </button>
+
+            <button class="letra bt_1 b2">  CONTATO</button>
+            <button class="letra bt_1 b3" onclick="mostrar_tutoriai() ">TUTORIAIS</button>
+        </div>
+    </div>
+    <div class="content-f ">
+        <div class="barra-esquerda "></div>
+        <div class="portfolio_mostra " align="center ">
+            CODE PROGRAMADO
+        </div>
+        <div class="barra-direita "></div>
+
+    </div>
+    <!-- contador de view---------------------------------------------------------------- -->
+    <div align=center>
+        <img src="src/img/view.png " width="30 " alt=" ">
+        <img src='https://www.counter12.com/img-zZbza1z2DcaDWBbZ-26.gif' border='0' alt='contador de acesso grátis'>
+        <script type='text/javascript' src='https://www.counter12.com/ad.js?id=zZbza1z2DcaDWBbZ'>
+        </script>
+    </div>
+
+    <!-- ESPAÇO QUE VAI CONTER TODO CONTEUDO--------------------------------------------- -->
+    <div class="timeline " id="id_timeline ">
+
+
+
+        <!-- tela do portfolio ------------------------------------------------------->
+        <div align="center " id="id_portfolio " class="tela_portfolio " style="display:none; ">
+            <br>
+            <div class="portfolio_mostra ">P O R T F O L I O</div>
+            <br>
+            <!-- primeira colula da tabela portfolio -->
+            <div class="flex-content ">
+                <div class="box-content " onclick="pet_monitor () ">
+                    <img class="imagem_p " src="https://i.ibb.co/p1GSBZT/capa1.png " alt=" ">
+                    <div class="letra_centro ">Pet monitor</div>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/ww1cZ4R/capa2.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Fazentec</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/8c7VVFM/capa3.png " class="imagem_p " alt=" ">
+                    <p class="letra_centro ">Joias raras S.A</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/yQ3C87V/capa4.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Pulse ADS</p>
+                </div>
+                <div class="box-content ">
+                    <img src="https://i.ibb.co/zNyrq6k/capa5.png " alt=" " class="imagem_p ">
+                    <p class="letra_centro ">Zero dengue</p>
+                </div>
+
+
+            </div>
+            <!-- inicio do arquivo pet monitor   -->
+            <div class="pet_monitor " id="portfolio_pet " style="display: none; ">
+                <iframe border="none " SameSite="None " src="src/portfolio/pet_monitor/pet_monitor.html " class="petm ">
+                            </iframe>
+            </div>
+            <!-- final da tela do portfolio -->
+            <br>
+        </div>
+        <!-- tela do site ------------------------------------------------------->
+        <div align="center " id="id_site " class="tela_site " style="display:none; ">
+
+            <div class="space_div1 ">
+
+                <div class="formulario ">
+                    <form action=" ">
+                        <table border="1 ">
+                            <tr>
+                                <td>Nome</td>
+                                <td>
+                                    <input type="text ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>cidade</td>
+                                <td>
+                                    <input type="text ">
+                                </td>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- MENU DE NOTICIAS -------------------------------------------------------- -->
+        <div align="center " id="inicio " classe="tela_inicio " onclick=" " style="display: none; ">
+            <div align="center " class="letra tema ">Code Programado</div>
+            <br>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- rede SOCIAL PARA CONTATO -------------------------------------- -->
+    <div align="center " class="tela_social ">
+        <a href="https://www.instagram.com/codeprogramado/ " target="_blank "><img class="instagram " src="src/img/logo_instagram.png " alt=" ">
+            <div class="i1 letra "> Instagram</div>
+        </a>
+        <a href="https://github.com/LuizinhoVI " target="_blank "><img class="github " src="src/img/logo_github.png " alt=" ">
+            <div class="g1 letra ">Github</div>
+        </a>
+        <a href="https://www.youtube.com/c/codeprogramado " target="_blank "><img class="youtube " src="src/img/logo_youtube.png " alt=" ">
+            <div class="y1 letra ">Youtube</div>
+        </a>
+
+    </div>
+    <!-- final da pagina  -->
+    <div class="footer ">
+        <div class="inst1 letra "> Author: <a class="inst " href="https://www.instagram.com/l_u_i_zzz_/ " target="_blank ">Luiz Vieira</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
