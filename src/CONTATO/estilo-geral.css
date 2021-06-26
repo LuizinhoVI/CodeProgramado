@@ -79,7 +79,7 @@
     
     .content-t {
         position: absolute;
-        border: red 1px solid;
+        /* border: red 1px solid; */
         height: 100px;
         width: 100%;
         position: relative;
@@ -110,11 +110,15 @@
         position: relative;
         display: flex;
         border: solid red 2px;
-        top: 200px;
+        top: 100px;
         height: 100%;
         width: 100%;
     }
     /* inicio da caixa para contato  */
+    
+    .letra-menu {
+        font-size: 25px;
+    }
     
     .contato-box {
         width: 100%;
@@ -132,14 +136,14 @@
         transform: translateX(-50%);
     }
     
-    .sem-border:focus {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        box-shadow: 1px 1px 3px 1px;
-        background-color: #e9ecef;
-        border-color: #e9ecef;
+    .formulario {
+        border: solid red 2px;
     }
+    
+    .sem-border {
+        border-bottom: black;
+    }
+    /* icones do contatos----------------------- */
     
     .img-div {
         /* border: solid 2px red; */
@@ -181,10 +185,11 @@
         border: solid 1px black;
         position: relative;
         border-radius: 50%;
-        top: 70px;
+        top: 75px;
         box-shadow: 1px 1px 0px 0px;
-        background: blue;
+        /* background: red; */
     }
+    /* final do icon de contato------------------------ */
     /* -------------------------------------------------------- */
     /*  */
     /* logo do site  */
