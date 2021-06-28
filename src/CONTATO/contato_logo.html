@@ -15,8 +15,8 @@
             <div class="box" align="center">
                 <div>
                     <br>
-                    <hr color="red">
                     <div class="letra" align="center">Escolha a categoria</div>
+                    <hr>
                     <br>
                     <div class="img-div">
                         <div class="quadrado-ok" align="center">
@@ -36,6 +36,7 @@
                     <br>
                     <div class="letra"> Fomas de entrar em contato
                     </div>
+                    <hr>
                     <br>
                     <div class="img-div">
                         <div class="quadrado-ok">
@@ -58,32 +59,33 @@
                     </div>
                     <br>
                 </div>
-                <div class="">
-                    <form action="" class="">
+                <hr>
+                <div class="formulario">
+                    <form action="" class="meio">
                         <br>
-                        <label class="letra menu" for="cadastro_nome" align="right">Nome :</label>
-                        <input type="text" id="cadastro_nome" class="sem-border">
+                        <label class="menu" for="cadastro_nome">Nome :
+                        <input type="text" id="cadastro_nome" class="sem-border" placeholder=" Nome Completo"></label>
+
                         <br>
+                        <label class="menu" for="cadastro_email">Email :
+                        <input type="email" id="cadastro_email" placeholder="exemplo@email.com" class="sem-border"></label>
                         <br>
-                        <label class="letra-menu" for="cadastro_email" align="right"> Email :</label>
-                        <input type="email" id="cadastro_email" class="sem-border">
-                        <br> <br>
-                        <label class="letra-menu" for="cadastro_telefone" align="right"> Telefone :</label>
-                        <input type="tel" id="cadastro_telefone" class="sem-border">
-                        <br><br>
-                        <label class="letra-menu" for="cadastro_instagram" align="right"> Instragram :</label>
-                        <input type="tel" id="cadastro_instagram" class="sem-border">
-                        <br><br>
-                        <label class="letra-menu" for="cadastro_texto" align="right">Resuma seu projeto até 50 linhas
+                        <label class="menu" for="cadastro_telefone"> Telefone:
+                        <input type="tel" id="cadastro_telefone" class="sem-border" placeholder="seu telefone" maxlength="13" minlength="12" size="10"></label>
+                        <br>
+                        <label class="menu" for="cadastro_instagram" align=""> Instragram:
+                        <input type="tel" id="cadastro_instagram" class="sem-border" placeholder="@seu nome" size="10">
 </label>
-                        <br><br>
-                        <textarea class="sem-border" rows="" cols="" id="cadastro_texto"></textarea>
-                        <br><br>
-                        <input type="submit" value="enviar">
+                        <br>
+                        <label class="menu" for="cadastro_texto">Resuma seu projeto até 50 linhas
+                        </label>
+
+                        <textarea class="sem-border texto_do_cliente" rows="50" cols="20" id="cadastro_texto" maxlength="232" minlength="10"></textarea>
+
+                        <input type="submit" class="encaminhar_cliente" value="enviar">
 
                     </form>
-
-                    <span></span>
+                    <br>
                 </div>
             </div>
         </div>
@@ -93,7 +95,7 @@
         <!-- tela da logo -->
         <div id="" class="tela-logo" style="display: block;">
             <div class="sobre-box">
-                <img class="logo-box" src="SRC/img/centro.png" alt="">
+                <img class="logo-box" src="src/img/centro.png" alt="">
                 <p>Feito para você micro empreendedor ou donos de pequenas empresas</p>
             </div>
 

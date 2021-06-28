@@ -1,221 +1,264 @@
-    body {
-        margin: 0;
-        overflow-x: hidden;
-        background-color: #e9ecef;
-        width: auto;
-        height: 800px;
-    }
-    
-    main {
-        height: 100%;
-    }
-    /* menu inicial  */
-    
-    .menu-home {
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        height: 1.5cm;
-        background-color: #040405;
-        display: flex;
-        box-shadow: 2px 2px 2px 2px;
-    }
-    
-    .flex-box {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .opcao {
-        position: relative;
-        width: 60px;
-        height: 50px;
-        right: 40px;
-        top: 5px;
-        cursor: pointer;
-    }
-    
-    .reta {
-        list-style: none;
-        height: 5px;
-        width: 50px;
-        background-color: white;
-        position: absolute;
-        right: 10%;
-        top: 8px;
-        border-radius: 35%;
-    }
-    
-    .v {
-        right: 10%;
-        top: 22px;
-    }
-    
-    .z {
-        right: 10%;
-        top: 36px;
-    }
-    
-    .logo {
-        position: relative;
-        top: -10px;
-        width: 70px;
-        height: 70px;
-        left: 30px;
-        cursor: pointer;
-        /* border: red 3px solid; */
-    }
-    /* tema principal */
-    
-    .tema {
-        font-size: 50px;
-        text-shadow: 2px 2px 5px rgb(97, 96, 96);
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .content-t {
-        position: absolute;
-        /* border: red 1px solid; */
-        height: 100px;
-        width: 100%;
-        position: relative;
-        top: 90px;
-    }
-    
-    .barra-esquerda:before {
-        background-image: linear-gradient(270deg, #8d8a8a, transparent);
-        position: absolute;
-        content: "";
-        width: calc(40vw - 200px);
-        height: 2px;
-        top: 19%;
-    }
-    
-    .barra-direita:before {
-        background-image: linear-gradient(90deg, #8d8a8a, transparent);
-        position: absolute;
-        content: "";
-        width: calc(40vw - 200px);
-        height: 2px;
-        top: 19%;
-        right: 0;
-    }
-    /* tela do meio */
-    
-    .content-timeline {
-        position: relative;
-        display: flex;
-        border: solid red 2px;
-        top: 100px;
-        height: 100%;
-        width: 100%;
-    }
-    /* inicio da caixa para contato  */
-    
-    .letra,
-    .menu {
-        font-size: 25px;
-        width: 100%;
-    }
-    
-    .contato-box {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    
-    .box {
-        width: 12cm;
-        height: 100%;
-        text-align: center;
-        border: solid black 1px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .formulario {
-        /* border: solid red 2px; */
-    }
-    
-    .sem-border {
-        height: 30px;
-        font-size: 20px;
-        border-style: none;
-        width: 50%;
-    }
-    /* icones do contatos----------------------- */
-    
-    .img-div {
-        /* border: solid 2px red; */
-        display: flex;
-        width: 100%;
-        height: 90px;
-        justify-content: space-between;
-    }
-    
-    .img-cell,
-    .img-pc,
-    .img-web,
-    .img-wapp {
-        transition: width 0.1s;
-        width: 60px;
-        position: absolute;
-        cursor: pointer;
-    }
-    
-    .img-cell:hover,
-    .img-pc:hover,
-    .img-web:hover,
-    .img-wapp:hover {
-        width: 70px;
-    }
-    
-    .quadrado-ok {
-        /* border: solid red 3px; */
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .barra-ok {
-        width: 10px;
-        height: 10px;
-        border: solid 1px black;
-        position: relative;
-        border-radius: 50%;
-        top: 75px;
-        box-shadow: 1px 1px 0px 0px;
-        /* background: red; */
-    }
-    /* final do icon de contato------------------------ */
-    /* -------------------------------------------------------- */
-    /*  */
-    /* logo do site  */
-    
-    .sobre-box {
-        position: relative;
-        text-align: center;
-    }
-    
-    .tela-logo {
-        width: 100%;
-        height: 100%;
-        border: black solid 1px;
-        position: relative;
-    }
-    
-    .logo-box {
-        width: 5cm;
-        height: 5cm;
-        border-radius: 50%;
-        background-color: white;
-        /* border: solid rgb(0, 0, 0) 2px; */
-        box-shadow: 2px 2px 5px 2px;
-    }
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #e9ecef;
+    width: auto;
+    height: 1000px;
+}
+
+main {
+    height: 100%;
+}
+
+
+/* menu inicial  */
+
+.menu-home {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 1.5cm;
+    background-color: #040405;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.opcao {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    right: 40px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.reta {
+    list-style: none;
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top: 8px;
+    border-radius: 35%;
+}
+
+.v {
+    right: 10%;
+    top: 22px;
+}
+
+.z {
+    right: 10%;
+    top: 36px;
+}
+
+.logo {
+    position: relative;
+    top: -10px;
+    width: 70px;
+    height: 70px;
+    left: 30px;
+    cursor: pointer;
+    /* border: red 3px solid; */
+}
+
+
+/* tema principal */
+
+.tema {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(97, 96, 96);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-t {
+    position: absolute;
+    /* border: red 1px solid; */
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 90px;
+}
+
+.barra-esquerda:before {
+    background-image: linear-gradient(270deg, #8d8a8a, transparent);
+    position: absolute;
+    content: "";
+    width: calc(40vw - 200px);
+    height: 2px;
+    top: 19%;
+}
+
+.barra-direita:before {
+    background-image: linear-gradient(90deg, #8d8a8a, transparent);
+    position: absolute;
+    content: "";
+    width: calc(40vw - 200px);
+    height: 2px;
+    top: 19%;
+    right: 0;
+}
+
+
+/* tela do meio */
+
+.content-timeline {
+    position: relative;
+    display: flex;
+    border: solid red 2px;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* inicio da caixa para contato  */
+
+.letra {
+    font-size: 25px;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+    /* border: red 1px solid; */
+}
+
+.contato-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    width: 12cm;
+    height: 100%;
+    text-align: center;
+    border: solid black 1px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formulario {
+    /* border: solid red 2px; */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sem-border {
+    position: relative;
+    height: 20px;
+    font-size: 15px;
+    border-style: ridge;
+    border-radius: 10px;
+    /* width: 50%; */
+    left: 20px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.texto_do_cliente {
+    height: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.encaminhar_cliente {
+    width: 40%;
+    margin-right: -20px;
+}
+
+
+/* icones do contatos----------------------- */
+
+.img-div {
+    /* border: solid 2px red; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.img-cell,
+.img-pc,
+.img-web,
+.img-wapp {
+    transition: width 0.1s;
+    width: 60px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.img-cell:hover,
+.img-pc:hover,
+.img-web:hover,
+.img-wapp:hover {
+    width: 70px;
+}
+
+.quadrado-ok {
+    /* border: solid red 3px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barra-ok {
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+    position: relative;
+    border-radius: 50%;
+    top: 75px;
+    box-shadow: 1px 1px 0px 0px;
+    /* background: red; */
+}
+
+
+/* final do icon de contato------------------------ */
+
+
+/* -------------------------------------------------------- */
+
+
+/*  */
+
+
+/* logo do site  */
+
+.sobre-box {
+    position: relative;
+    text-align: center;
+}
+
+.tela-logo {
+    width: 100%;
+    height: 100%;
+    border: black solid 1px;
+    position: relative;
+}
+
+.logo-box {
+    width: 5cm;
+    height: 5cm;
+    border-radius: 50%;
+    background-color: white;
+    /* border: solid rgb(0, 0, 0) 2px; */
+    box-shadow: 2px 2px 5px 2px;
+}
