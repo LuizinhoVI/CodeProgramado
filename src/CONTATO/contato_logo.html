@@ -13,85 +13,82 @@
         <!-- tela do contato  ------------------------------------->
         <div id="id_site " class="contato-box" style="display:block; ">
             <div class="box" align="center">
-                <br>
-                <div class="letra-menu">Escolha a categoria</div>
-                <br>
-                <div class="img-div">
-                    <div class="quadrado-ok" align="center">
-                        <img class="img-cell" onclick="cell()" id="id_cell" src="SRC/img/contato/cell.png" alt="">
-                        <div class="barra-ok"></div>
-                    </div>
+                <div>
+                    <br>
+                    <hr color="red">
+                    <div class="letra" align="center">Escolha a categoria</div>
+                    <br>
+                    <div class="img-div">
+                        <div class="quadrado-ok" align="center">
+                            <img class="img-cell" onclick="cell()" id="id_cell" src="SRC/img/contato/cell.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
 
-                    <div class="quadrado-ok">
-                        <img class="img-pc" onclick="pc()" src="src/img/contato/pc.png" alt="">
-                        <div class="barra-ok"></div>
+                        <div class="quadrado-ok">
+                            <img class="img-pc" onclick="pc()" src="src/img/contato/pc.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
+                        <div class="quadrado-ok">
+                            <img class="img-web" onclick="web()" src="src/img/contato/web.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
                     </div>
-                    <div class="quadrado-ok">
-                        <img class="img-web" onclick="web()" src="src/img/contato/web.png" alt="">
-                        <div class="barra-ok"></div>
+                    <br>
+                    <div class="letra"> Fomas de entrar em contato
                     </div>
-                </div>
-                <br>
-                <div class="letra-menu"> Fomas de entrar em contato
-                </div>
-                <br>
-                <div class="img-div">
-                    <div class="quadrado-ok">
-                        <img class="img-cell" onclick="email()" src="SRC/img/contato/email.png" alt="">
-                        <div class="barra-ok"></div>
-                    </div>
-                    <div class="quadrado-ok">
-                        <img class="img-pc" onclick="inst()" src="SRC/img/contato/inst.png" alt="">
-                        <div class="barra-ok"></div>
-                    </div>
-                    <div class="quadrado-ok">
+                    <br>
+                    <div class="img-div">
+                        <div class="quadrado-ok">
+                            <img class="img-cell" onclick="email()" src="SRC/img/contato/email.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
+                        <div class="quadrado-ok">
+                            <img class="img-pc" onclick="inst()" src="SRC/img/contato/inst.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
+                        <div class="quadrado-ok">
 
-                        <img class="img-web" onclick="telegram()" src="SRC/img/contato/telegram.png" alt="">
-                        <div class="barra-ok"></div>
+                            <img class="img-web" onclick="telegram()" src="SRC/img/contato/telegram.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
+                        <div class="quadrado-ok">
+                            <img class="img-wapp" onclick="wapp()" src="SRC/img/contato/wapp.png" alt="">
+                            <div class="barra-ok"></div>
+                        </div>
                     </div>
-                    <div class="quadrado-ok">
-                        <img class="img-wapp" onclick="wapp()" src="SRC/img/contato/wapp.png" alt="">
-                        <div class="barra-ok"></div>
-                    </div>
+                    <br>
                 </div>
-                <br>
-                <table border="5" class="formulario">
+                <div class="">
                     <form action="" class="">
                         <br>
+                        <label class="letra menu" for="cadastro_nome" align="right">
+                        Nome :
+                        </label>
+                        <input type="text" id="cadastro_nome" class="sem-border">
+                        <br>
+                        <br>
+                        <label class="letra-menu" for="cadastro_email" align="right"> Email :</label>
+                        <input type="email" id="cadastro_email" class="sem-border">
+                        <br> <br>
+                        <label class="letra-menu" for="cadastro_telefone" align="right"> Telefone :</label>
+                        <input type="tel" id="cadastro_telefone" class="sem-border">
+                        <br><br>
+                        <label class="letra-menu" for="cadastro_instagram" align="right"> Instragram :</label>
+                        <input type="tel" id="cadastro_instagram" class="sem-border">
+                        <br><br>
+                        <label class="letra-menu" for="cadastro_texto" align="right">Resuma seu projeto até 50 linhas
+                            </label>
+                        <br><br>
+                        <textarea class="sem-border" rows="" cols="" id="cadastro_texto"></textarea>
+                        <br><br>
+                        <input type="submit" value="enviar">
 
-
-                        <td class="letra-menu">
-                            Nome :</td>
-                        <td> <input type="text" class="sem-border">
-                        </td>
-
-                        <tr></tr>
-                        <td class="letra-menu"> Email :</td>
-                        <td> <input type="email" class="sem-border">
-                        </td>
-                        <tr></tr>
-                        <td class="letra-menu"> Telefone :</td>
-                        <td> <input type="tel" class="sem-border">
-                        </td>
-                        <tr></tr>
-                        <td class="letra-menu"> Instragram :</td>
-                        <td> <input type="tel" class="sem-border">
-                        </td>
-                        <tr></tr>
-                        <td class="letra-menu">Resuma seu projeto até 50 linhas </td>
-                        <tr></tr>
-                        <td> <textarea rows="" cols=""></textarea>
-                        </td>
-                        <tr></tr>
-                        <td>
-                            <input type="submit" value="enviar">
-                        </td>
                     </form>
-                </table>
 
-                <span>teste</span>
+                    <span></span>
+                </div>
             </div>
-
+        </div>
         </div>
 
 
@@ -101,6 +98,7 @@
                 <img class="logo-box" src="SRC/img/centro.png" alt="">
                 <p>Feito para você micro empreendedor ou donos de pequenas empresas</p>
             </div>
+
         </div>
     </section>
 

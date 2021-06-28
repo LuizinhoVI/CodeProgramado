@@ -116,8 +116,10 @@
     }
     /* inicio da caixa para contato  */
     
-    .letra-menu {
+    .letra,
+    .menu {
         font-size: 25px;
+        width: 100%;
     }
     
     .contato-box {
@@ -130,18 +132,21 @@
         width: 12cm;
         height: 100%;
         text-align: center;
-        border: solid black 3px;
+        border: solid black 1px;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
     
     .formulario {
-        border: solid red 2px;
+        /* border: solid red 2px; */
     }
     
     .sem-border {
-        border-bottom: black;
+        height: 30px;
+        font-size: 20px;
+        border-style: none;
+        width: 50%;
     }
     /* icones do contatos----------------------- */
     
