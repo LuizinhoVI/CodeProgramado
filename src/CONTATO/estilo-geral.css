@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     background-color: #e9ecef;
     width: auto;
-    height: 1000px;
+    height: 1200px;
 }
 
 main {
@@ -127,6 +127,7 @@ main {
 .letra {
     font-size: 25px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .menu {
@@ -158,17 +159,21 @@ main {
     height: 100%;
 }
 
-.sem-border {
+input.sem-border {
     position: relative;
     height: 20px;
     font-size: 15px;
     border-style: ridge;
     border-radius: 10px;
-    /* width: 50%; */
     left: 20px;
-    text-align: center;
+    text-align: left;
     margin-right: 30px;
     margin-bottom: 20px;
+    padding: 10px;
+}
+
+input.sem-border::placeholder {
+    text-align: center;
 }
 
 .texto_do_cliente {
