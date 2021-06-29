@@ -35,7 +35,7 @@
     height: 100%;
 }
 
-input.sem-border {
+.sem-border {
     position: relative;
     height: 20px;
     font-size: 15px;
@@ -51,7 +51,7 @@ input.sem-border {
     padding: 10px;
 }
 
-input.sem-border::placeholder {
+.sem-border::placeholder {
     text-align: center;
 }
 
@@ -83,7 +83,5 @@ input.sem-border::placeholder {
 }
 
 textarea {
-    border: none;
     margin-top: 10px;
-    border-color: transparent;
 }
