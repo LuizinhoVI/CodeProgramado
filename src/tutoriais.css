@@ -1,12 +1,16 @@
 /* parte do youtube ------------------------------------------------------------------ */
+.space_div3{
+width: 100%;
+height:1800px;
+position: relative;
+}
+
 .tela_youtube{
     /* border: solid red 1px; */
-    
     width: 100%;
     height: 100%;
-  top: 10px;
-  
-  position: relative;
+    top: 10px;
+    position: relative;
     }
   
     /* quadrados dos textos------------------------- */
@@ -41,7 +45,7 @@
       iframe{
         width: 100%;
         height: 100%;
-        position: static;
+        position: relative;
       }
   
       .btdownload {
@@ -76,7 +80,7 @@
   
   width: 50%;
   height: 350px;
-  right: 0;
+  right: 20px;
   position: absolute;
   border:  solid 5px #ccc ;
   }
