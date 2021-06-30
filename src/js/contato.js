@@ -9,13 +9,49 @@ function cell() {
 
 }
 
+function cell_balao_on() {
+
+    document.getElementById('balao').style.display = "block"
+
+}
+
+function cell_balao_off() {
+
+    document.getElementById('balao').style.display = "none"
+
+}
+
 function pc() {
     var t = [phone[0].style.background = "none", phone[1].style.background = "blue", phone[2].style.background = "none"]
 
 }
 
+function cell_balao_on1() {
+
+    document.getElementById('balao1').style.display = "block"
+
+}
+
+function cell_balao_off1() {
+
+    document.getElementById('balao1').style.display = "none"
+
+}
+
 function web() {
     var t = [phone[0].style.background = "none", phone[1].style.background = "none", phone[2].style.background = "blue"]
+
+}
+
+function cell_balao_on2() {
+
+    document.getElementById('balao2').style.display = "block"
+
+}
+
+function cell_balao_off2() {
+
+    document.getElementById('balao2').style.display = "none"
 
 }
 

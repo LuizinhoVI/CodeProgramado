@@ -85,3 +85,32 @@
 textarea {
     margin-top: 10px;
 }
+
+#balao,
+#balao1,
+#balao2 {
+    background: #7e7e81;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    left: 108px;
+    width: 50px;
+    height: 20px;
+    border-radius: 20%;
+}
+
+.balao_move1 {
+    position: absolute;
+    left: 160px;
+    top: 0;
+    width: 50px;
+    height: 20px;
+}
+
+.balao_move2 {
+    position: absolute;
+    left: 310px;
+    top: 0;
+    width: 50px;
+    height: 20px;
+}
