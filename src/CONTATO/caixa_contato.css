@@ -12,11 +12,12 @@
 }
 
 .contato-box {
-    width: 50%;
+    width: 30%;
     height: 100%;
     position: relative;
     margin-bottom: 10%;
     border: solid red 1px;
+    right: 2%;
 }
 
 .box {
@@ -88,25 +89,25 @@
     background: #7e7e81;
     padding: 15px;
     position: absolute;
-    top: 50px;
-    left: 108px;
-    width: 50px;
+    top: 35px;
+    left: -45px;
+    width: 60px;
     height: 20px;
-    border-radius: 20%;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.balao_move {
+    position: absolute;
+    top: 0;
 }
 
 .balao_move1 {
     position: absolute;
-    left: 160px;
     top: 0;
-    width: 50px;
-    height: 20px;
 }
 
 .balao_move2 {
     position: absolute;
-    left: 310px;
     top: 0;
-    width: 50px;
-    height: 20px;
 }
