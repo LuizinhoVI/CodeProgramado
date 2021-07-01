@@ -1,6 +1,7 @@
-@media only screen and (max-width:918px) {
+@media only screen and (max-width:768px) {
     .content-timeline {
         flex-direction: column;
+        width: 100%;
     }
     .tela-logo {
         left: 50%;
@@ -15,6 +16,12 @@
     .contato-box {
         left: 50%;
         transform: translateX(-50%);
-        width: 90%;
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+    textarea {
+        width: 50%;
     }
 }

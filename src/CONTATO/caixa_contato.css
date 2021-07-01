@@ -56,12 +56,6 @@
     text-align: center;
 }
 
-.texto_do_cliente {
-    height: 200px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
 .encaminhar_cliente {
     width: 40%;
     margin-right: -20px;
@@ -110,4 +104,16 @@
 .balao_move2 {
     position: absolute;
     top: 0;
+}
+
+.area1>textarea {
+    width: 90%;
+    resize: none;
+    height: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.area1>textarea::placeholder {
+    text-align: center;
 }

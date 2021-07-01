@@ -2,7 +2,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #e9ecef;
-    height: 1500px;
+    height: 1800px;
 }
 
 main {
@@ -42,7 +42,6 @@ main {
     list-style: none;
     height: 5px;
     width: 50px;
-    background-color: ;
     position: absolute;
     right: 10%;
     top: 8px;
@@ -117,11 +116,11 @@ main {
     position: relative;
     display: flex;
     justify-content: space-between;
-    border: solid red 1px;
+    /* border: solid rgb(119, 14, 204) 5px; */
     height: 100%;
     width: 100%;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 
@@ -195,7 +194,7 @@ main {
     height: 100%;
     border: black solid 1px;
     position: relative;
-    left: 0;
+    left: 5%;
 }
 
 .logo-box {
