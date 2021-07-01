@@ -1,0 +1,20 @@
+.rede-social {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
+.rede-social>div>a>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px red;
+}
+
+.rede-social>div {
+    float: left;
+    text-align: center;
+}

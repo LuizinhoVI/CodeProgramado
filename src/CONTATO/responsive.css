@@ -1,0 +1,19 @@
+@media only screen and (max-width:918px) {
+    .content-timeline {
+        flex-direction: column;
+    }
+    .tela-logo {
+        left: 50%;
+        transform: translatex(-50%);
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    /* tela do meio */
+    .content-timeline {
+        margin-top: 20%;
+    }
+    .contato-box {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
