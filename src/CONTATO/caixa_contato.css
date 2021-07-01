@@ -107,7 +107,7 @@
 }
 
 .area1>textarea {
-    width: 50%;
+    width: 100%;
     resize: none;
     height: 200px;
     margin-left: 50%;
