@@ -20,6 +20,6 @@
     }
     .area1>textarea {
         width: 200px;
-        border: solid red 2px;
+        /* border: solid red 2px; */
     }
 }

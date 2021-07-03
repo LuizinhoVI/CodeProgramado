@@ -1,16 +1,5 @@
 /* inicio da caixa para contato  */
 
-.letra {
-    font-size: 25px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.menu {
-    position: relative;
-    /* border: red 1px solid; */
-}
-
 .contato-box {
     width: 30%;
     height: 100%;
@@ -26,6 +15,17 @@
     text-align: center;
     border: solid black 1px;
     position: relative;
+}
+
+.letra {
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu {
+    position: relative;
+    /* border: red 1px solid; */
 }
 
 .formulario {
@@ -116,4 +116,14 @@
 
 .area1>textarea::placeholder {
     text-align: center;
+}
+
+.bt {
+    width: 300px;
+    border: solid 1px black;
+    /* box-shadow: 0px 0px 2px 2px blue; */
+}
+
+.bt:hover {
+    box-shadow: 0px 0px 2px 2px blue;
 }
