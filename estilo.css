@@ -8,7 +8,7 @@ section.content {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 600px 500px 200px 60px;
+    grid-template-rows: 50px 600px 500px 200px 150px;
     grid-gap: 30px;
 }
 
@@ -143,4 +143,24 @@ div.box6 {
     position: relative;
     box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.25);
     padding: 20px;
+}
+
+div.box6>footer {
+    position: relative;
+    top: 80px;
+    right: 300px;
+}
+
+div.box6>div {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 500px;
+    left: 180px;
+    position: relative;
+}
+
+div.box6>div>div>img {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
 }

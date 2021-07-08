@@ -1,6 +1,6 @@
-@media only screen and (max-width:950vw) {
+@media only screen and (max-width:950px) {
     section.content {
-        grid-template-rows: 50px 500px 500px 500px 200px 100px;
+        grid-template-rows: 50px 500px 500px 500px 200px 150px;
     }
     div.box1>header>div {
         display: block;
