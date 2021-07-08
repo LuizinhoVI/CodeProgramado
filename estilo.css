@@ -21,6 +21,27 @@ section.content {
 div.box1 {
     grid-column: 1/3;
     box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+div.box1>header>div {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+div.box1>header>div>div {
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: black;
+    border: solid black 2px;
+}
+
+div.box1>header>div>.mid {
+    position: relative;
+    top: 20px;
 }
 
 div.box2 {
