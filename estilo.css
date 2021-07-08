@@ -147,7 +147,7 @@ div.box6 {
 
 div.box6>footer {
     position: relative;
-    top: 80px;
+    top: 20px;
     right: 300px;
 }
 
@@ -162,5 +162,19 @@ div.box6>div {
 div.box6>div>div>img {
     position: absolute;
     width: 50px;
+    height: 50px;
     cursor: pointer;
+    left: 0%;
+}
+
+div.box6>div>div>img:hover {
+    transition: 1s;
+    width: 60px;
+    height: 60px;
+}
+
+div.box6>div>div {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
