@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     section.content {
         grid-template-rows: 50px 500px 500px 500px 200px 150px;
     }
@@ -23,7 +23,7 @@
     }
 }
 
-@media (max-width: 440px) {
+@media (min-width: 340px) and (max-width: 450px) {
     div.box2>div {
         height: 460px;
         width: 500px;
