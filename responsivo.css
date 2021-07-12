@@ -23,7 +23,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 440px) {
     div.box2>div {
         height: 460px;
         width: 500px;
