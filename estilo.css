@@ -4,10 +4,14 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+ul {
+    text-indent: none;
+}
+
 section.content {
     display: grid;
     /* width: 100vw; */
-    grid-template-rows: 50px 600px 500px 200px 150px;
+    grid-template-rows: 50px 600px 500px 200px auto;
     grid-gap: 20px;
 }
 
@@ -77,6 +81,26 @@ div.box3>div {
     height: 553px;
     background: #F0F4F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+}
+
+div.box3>div>label {
+    position: relative;
+    font-size: 20px;
+}
+
+.foto {
+    width: 50px;
+    cursor: pointer;
+}
+
+div.box3>div>div {
+    display: flex;
+    justify-content: space-between;
+    border: solid red 1px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 div.box4 {
@@ -140,7 +164,7 @@ div.box5>div {
 div.box6 {
     grid-column: 1/3;
     display: grid;
-    grid-template-rows: 25px 60px 30px;
+    grid-template-rows: 25px 120px 30px;
     grid-gap: 10px;
     background: #303036;
     color: white;
@@ -149,16 +173,15 @@ div.box6 {
 }
 
 div.box6>label {
-    width: 450px;
-    margin-left: 50px;
     text-align: center;
     font-size: 20px;
     font-style: italic;
     border: red 1px solid;
-    grid-column: 2/3;
+    grid-column: 1/3;
 }
 
 div.box6>nav {
+    border: solid red 1px;
     position: relative;
     grid-column: 1/2;
 }
@@ -167,9 +190,8 @@ div.box6>footer {
     grid-column: 1/3;
     position: relative;
     width: 100%;
-    border: solid red 2px;
+    border: solid red 1px;
     text-align: left;
-    bottom: 0;
 }
 
 div.box6>footer>label {
@@ -178,8 +200,8 @@ div.box6>footer>label {
 }
 
 div.box6>div {
-    width: 450px;
-    margin-left: 50px;
+    padding: 15px;
+    margin-left: 10px;
     display: inline-flex;
     justify-content: space-between;
     border: solid red 1px;
