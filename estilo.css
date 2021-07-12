@@ -6,7 +6,7 @@ body {
 
 section.content {
     display: grid;
-    height: 100vh;
+    height: 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 600px 500px 200px 150px;
     grid-gap: 30px;
@@ -156,6 +156,7 @@ div.box6>div {
     justify-content: space-between;
     width: 500px;
     left: 180px;
+    border: solid red 1px;
     position: relative;
 }
 
