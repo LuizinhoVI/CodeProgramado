@@ -46,6 +46,7 @@ div.box1>header>div>.mid {
 div.box2 {
     grid-column: 1/2;
     display: flex;
+    position: relative;
     justify-content: center;
     box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.25);
 }
@@ -62,6 +63,7 @@ div.box2>div {
 
 div.box3 {
     grid-column: 2/3;
+    position: relative;
     display: flex;
     justify-content: center;
     box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.25);

@@ -24,8 +24,11 @@
 }
 
 @media (min-width: 340px) and (max-width: 450px) {
+    section.content {
+        grid-template-rows: 50px 1000px 600px 500px 200px 150px;
+    }
     div.box2>div {
-        height: 460px;
+        height: 900px;
         width: 500px;
     }
     div.box3>div {
