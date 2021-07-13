@@ -2,8 +2,17 @@
             section.content {
                 grid-template-rows: 50px 500px 500px 500px 200px auto;
             }
+            div.box1 {
+                padding: 10px;
+            }
             div.box1>header>div {
                 display: block;
+            }
+            div.box1>header>nav>ul {
+                display: none;
+            }
+            div.box1>header>label {
+                display: none;
             }
             div.box2 {
                 grid-column: 1/3;
