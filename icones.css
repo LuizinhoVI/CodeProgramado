@@ -27,3 +27,37 @@
     position: absolute;
     margin-left: 66%;
 }
+
+.entrada1 {
+    width: 80%;
+}
+
+.entrada2 {
+    width: 80%;
+}
+
+.entrada2:invalid {
+    color: red;
+}
+
+.entrada3 {
+    width: 50%;
+    color: black;
+}
+
+.entrada3:invalid {
+    color: red;
+}
+
+.entrada3:valid {
+    color: ;
+    box-shadow: 0px 2px 5px 1px rgb(16, 250, 55);
+}
+
+.entrada4 {
+    width: 50%;
+}
+
+.entrada4:invalid {
+    color: red;
+}

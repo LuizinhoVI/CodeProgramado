@@ -117,66 +117,97 @@ div.box3>div {
     height: 553px;
     background: #F0F4F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 div.box3>div>label {
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
+    top: 5px;
 }
 
 div.box3>div>div>img {
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: 70px;
     cursor: pointer;
     /* position: relative; */
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 div.box3>div>div>label {
-    position: absolute;
+    position: relative;
 }
 
 .foto:hover {
-    width: 70px;
+    width: 90px;
     height: auto;
     transition: 500ms;
 }
 
 div.box3>div>div {
     position: relative;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     justify-content: space-around;
-    margin-bottom: 75px;
-    height: auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    height: 15px;
     width: 80%;
     margin-left: 10%;
 }
 
+div.box3>div>div.selecionar {
+    top: 40px;
+}
+
 div.box3>div>div>div {
-    width: 20px;
+    width: 10px;
     height: 10px;
+    border-radius: 50%;
     border: solid rgb(0, 0, 0) 1px;
 }
 
-div.box3>div>nav>form {
+div.box3>div>nav {
+    margin-top: 10px;
+}
+
+div.box3>div>form>nav>div {
     display: grid;
-    grid-template-rows: auto auto;
-    border: red 1px solid;
+    grid-template-rows: 30px 30px 30px 30px;
+    /* border: red 1px solid; */
     width: 90%;
     position: relative;
     left: 5%;
+    grid-gap: 10px;
 }
 
-div.box3>div>nav>form>label {
+div.box3>div>form>nav>div>label {
     grid-column: 1/2;
+    right: 10px;
+    top: 5px;
     text-align: right;
+    position: relative;
 }
 
-div.box3>div>nav>form>input {
+div.box3>div>form>nav>div>input {
     grid-column: 2/2;
-    width: 50px;
+    border: solid 2px rgb(84, 9, 224);
+    border-radius: 20px;
+    border-style: double;
+    box-shadow: 0px 2px 5px 1px black;
+}
+
+div.box3>div>form>nav>div>input:focus {
+    border: double 8px rgb(84, 9, 224);
+    border-radius: 20px;
+}
+
+div.box3>div>form>input {
+    width: 50%;
+    height: 30px;
+    position: relative;
+    margin-top: 8px;
+    border-radius: 10px;
 }
 
 div.box4 {
@@ -196,6 +227,7 @@ div.box4>div {
     top: 18%;
     border: solid 1px black;
     border-radius: 5%;
+    cursor: pointer;
 }
 
 div.box4>div>div>div {
