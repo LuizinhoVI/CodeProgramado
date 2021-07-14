@@ -1,3 +1,4 @@
+@import"icones.css";
 body {
     margin: 0;
     background-color: #F0F4F8;
@@ -124,18 +125,58 @@ div.box3>div>label {
     font-size: 20px;
 }
 
-.foto {
+div.box3>div>div>img {
+    height: 50px;
     width: 50px;
     cursor: pointer;
+    /* position: relative; */
+    border: solid red 1px;
+}
+
+div.box3>div>div>label {
+    position: absolute;
+}
+
+.foto:hover {
+    width: 70px;
+    height: auto;
+    transition: 500ms;
 }
 
 div.box3>div>div {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     border: solid red 1px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    height: auto;
     width: 80%;
     margin-left: 10%;
+}
+
+div.box3>div>div>div {
+    width: 20px;
+    height: 10px;
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+div.box3>div>nav>form {
+    display: grid;
+    grid-template-rows: auto auto;
+    border: red 1px solid;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+div.box3>div>nav>form>label {
+    grid-column: 1/2;
+    text-align: right;
+}
+
+div.box3>div>nav>form>input {
+    grid-column: 2/2;
+    width: 50px;
 }
 
 div.box4 {
