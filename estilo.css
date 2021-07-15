@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #F0F4F8;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-y: 20px;
 }
 
 ul {
@@ -12,7 +13,7 @@ ul {
 section.content {
     display: grid;
     /* width: 100vw; */
-    grid-template-rows: 50px 600px 500px 200px auto;
+    grid-template-rows: 50px 800px 500px 200px auto;
     grid-gap: 20px;
 }
 
@@ -103,6 +104,8 @@ div.box2>div {
 
 div.box3 {
     grid-column: 2/3;
+    width: auto;
+    height: auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -114,7 +117,7 @@ div.box3>div {
     top: 3%;
     position: relative;
     width: 443px;
-    height: 553px;
+    height: 600px;
     background: #F0F4F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 0px;
@@ -191,23 +194,30 @@ div.box3>div>form>nav>div>label {
 
 div.box3>div>form>nav>div>input {
     grid-column: 2/2;
-    border: solid 2px rgb(84, 9, 224);
+    /* border: solid 2px rgb(84, 9, 224); */
     border-radius: 20px;
-    border-style: double;
+    border-style: none;
     box-shadow: 0px 2px 5px 1px black;
 }
 
 div.box3>div>form>nav>div>input:focus {
-    border: double 8px rgb(84, 9, 224);
+    border: double 3px rgb(84, 9, 224);
     border-radius: 20px;
+    outline: 0;
 }
 
 div.box3>div>form>input {
     width: 50%;
-    height: 30px;
+    height: 40px;
     position: relative;
-    margin-top: 8px;
-    border-radius: 10px;
+    margin-top: 20px;
+    border: solid blue 2px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 1px rgb(49, 94, 192);
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 
 div.box4 {

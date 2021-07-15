@@ -40,6 +40,10 @@
     color: red;
 }
 
+.entrada2:valid {
+    box-shadow: 0px 0px 2px 1px rgb(10, 12, 148);
+}
+
 .entrada3 {
     width: 50%;
     color: black;
@@ -47,11 +51,11 @@
 
 .entrada3:invalid {
     color: red;
+    box-shadow: 0px 2px 5px 1px rgb(250, 16, 16);
 }
 
 .entrada3:valid {
-    color: ;
-    box-shadow: 0px 2px 5px 1px rgb(16, 250, 55);
+    box-shadow: 0px 0px 2px 1px rgb(5, 117, 11);
 }
 
 .entrada4 {
@@ -60,4 +64,14 @@
 
 .entrada4:invalid {
     color: red;
+    box-shadow: 0px 2px 5px 1px rgb(250, 16, 16);
+}
+
+.entrada4:valid {
+    box-shadow: 0px 0px 2px 1px rgb(117, 5, 93);
+}
+
+.entrada5:hover {
+    color: white;
+    background: blue;
 }
