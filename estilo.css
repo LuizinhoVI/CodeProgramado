@@ -197,7 +197,7 @@ div.box3>div>form>nav>div>input {
     /* border: solid 2px rgb(84, 9, 224); */
     border-radius: 20px;
     border-style: none;
-    box-shadow: 0px 2px 5px 1px black;
+    box-shadow: 0px 1px 2px 1px black;
 }
 
 div.box3>div>form>nav>div>input:focus {
@@ -328,6 +328,12 @@ div.box6>div {
     justify-content: space-between;
     /* border: solid red 1px; */
     position: relative;
+    top: 20px;
+}
+
+div.box6>nav>ul>hr::after {
+    position: absolute;
+    width: 80px;
 }
 
 div.box6>div>div>img {

@@ -74,4 +74,5 @@
 .entrada5:hover {
     color: white;
     background: blue;
+    border: solid white 2px;
 }
