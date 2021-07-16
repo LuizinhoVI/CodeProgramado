@@ -1,6 +1,7 @@
 @import"icones.css";
+@import"entradas_responsivo.css";
 body {
-    margin: 0;
+    margin: 1;
     background-color: #F0F4F8;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-y: 20px;
@@ -97,9 +98,9 @@ div.box2>div {
     /* Rectangle 4 */
     position: relative;
     width: 443px;
-    height: 553px;
+    height: 750px;
     background: #F0F4F8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 div.box3 {
@@ -117,9 +118,9 @@ div.box3>div {
     top: 3%;
     position: relative;
     width: 443px;
-    height: 600px;
+    height: 750px;
     background: #F0F4F8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     margin-top: 0px;
 }
 
@@ -137,8 +138,10 @@ div.box3>div>div>img {
     /* border: solid red 1px; */
 }
 
-div.box3>div>div>label {
+div.box3>div>label {
     position: relative;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .foto:hover {
@@ -175,6 +178,7 @@ div.box3>div>nav {
 }
 
 div.box3>div>form>nav>div {
+    top: 20px;
     display: grid;
     grid-template-rows: 30px 30px 30px 30px;
     /* border: red 1px solid; */
@@ -194,6 +198,7 @@ div.box3>div>form>nav>div>label {
 
 div.box3>div>form>nav>div>input {
     grid-column: 2/2;
+    position: relative;
     /* border: solid 2px rgb(84, 9, 224); */
     border-radius: 20px;
     border-style: none;
@@ -207,13 +212,13 @@ div.box3>div>form>nav>div>input:focus {
 }
 
 div.box3>div>form>input {
-    width: 50%;
+    width: 200px;
     height: 40px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 80px;
     border: solid blue 2px;
     border-radius: 20px;
-    box-shadow: 0px 0px 4px 1px rgb(49, 94, 192);
+    box-shadow: 0px 0px 4px 1px rgb(128, 127, 127);
     color: black;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -243,7 +248,7 @@ div.box4>div {
 div.box4>div>div>div {
     /* display: contents; */
     justify-content: center;
-    padding: 9px;
+    padding: 10px;
 }
 
 div.box4>div>div>div.cargo {
@@ -306,7 +311,7 @@ div.box6>nav {
     grid-column: 1/2;
     display: flex;
     justify-content: space-between;
-    right: 15px;
+    right: 20px;
 }
 
 div.box6>footer {
@@ -315,11 +320,16 @@ div.box6>footer {
     width: 100%;
     /* border: solid red 1px; */
     text-align: left;
+    left: 5px;
 }
 
 div.box6>footer>label {
     position: absolute;
-    right: 10px;
+    right: 12px;
+}
+
+div.box6>footer>label>a {
+    color: red;
 }
 
 div.box6>div {
