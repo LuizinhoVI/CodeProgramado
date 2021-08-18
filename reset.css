@@ -23,8 +23,11 @@ html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("/w3images/mac.jpg");
+    background-color: black;
+    background-image: url("img/code_cat1.jpg");
     min-height: 100%;
+    filter: brightness(10%);
+    filter: contrast(100%);
 }
 
 .w3-bar .w3-button {
