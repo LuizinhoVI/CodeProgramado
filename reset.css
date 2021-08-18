@@ -31,3 +31,8 @@ html {
 .w3-bar .w3-button {
     padding: 16px;
 }
+
+#equipe {
+    display: flex;
+    justify-content: center;
+}
