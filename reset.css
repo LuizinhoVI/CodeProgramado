@@ -36,3 +36,15 @@ html {
     display: flex;
     justify-content: center;
 }
+
+#luiz {
+    padding: 10px;
+    filter: contrast(70%);
+    box-shadow: 0 0 10px 0;
+    border-radius: 10px;
+}
+
+#luiz:hover {
+    filter: contrast(100%);
+    box-shadow: 0 0 10px 0 blue;
+}
