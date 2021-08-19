@@ -1,14 +1,14 @@
 #efeito_letra {
     border: none;
     padding: 0;
-    box-shadow: .2em 0 0 #ffffff;
+    box-shadow: .3em 0 0 #ffffff;
     position: absolute;
     left: 50px;
     width: 22ch;
     height: 90px;
     overflow: hidden;
     white-space: nowrap;
-    animation: caret 1s infinite step-end, type 5s steps(30, end) infinite 5s;
+    animation: caret 1s infinite step-end, type 5s steps(23, end) infinite 5s;
 }
 
 @keyframes type {
@@ -19,6 +19,6 @@
 
 @keyframes caret {
     50% {
-        box-shadow: .2em 0 0 0 transparent;
+        box-shadow: .3em 0 0 0 transparent;
     }
 }
